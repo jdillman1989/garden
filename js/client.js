@@ -2,6 +2,11 @@ var ctx = null;
 var canvas = null;
 var sprites = {};
 
+var tileSize = 0,
+    mapW = 0,
+    mapH = 0,
+    map = [];
+
 window.onload = function(){
   loadSprites();
   $.ajaxSetup({ cache: false });
@@ -37,28 +42,33 @@ function loadGame(){
   $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
 
-      var tileSize = data.globals.tileSize,
-          mapW = data.globals.mapW,
-          mapH = data.globals.mapH;
+      tileSize = data.globals.tileSize,
+      mapW = data.globals.mapW,
+      mapH = data.globals.mapH,
+      map = data.map;
 
-      for(var y = 0; y < mapH; ++y){
-        for(var x = 0; x < mapW; ++x){
-          var currentPos = ((y*mapW)+x);
-          ctx.fillStyle = data.map[currentPos].render.base;
-          ctx.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
-
-          var thisSprite = data.map[currentPos].render.sprite;
-          if(thisSprite){
-            console.log(sprites[thisSprite]);
-            ctx.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
-          }
-        }
-      }
+      drawGame(tileSize, mapW, mapH, map);
     }
     else{
       newGame();
     }
   });
+}
+
+function drawGame(){
+  for(var y = 0; y < mapH; ++y){
+    for(var x = 0; x < mapW; ++x){
+      var currentPos = ((y*mapW)+x);
+      ctx.fillStyle = map[currentPos].render.base;
+      ctx.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
+
+      var thisSprite = map[currentPos].render.sprite;
+      if(thisSprite){
+        console.log(sprites[thisSprite]);
+        ctx.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
+      }
+    }
+  }
 }
 
 function loadSprites(){
@@ -89,7 +99,7 @@ function getCursorTile(e) {
 
 function highlightTile(tile) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  loadGame();
+  drawGame();
 
   var coords = getTileCoordinates(tile);
   ctx.fillStyle = "#AFA";
