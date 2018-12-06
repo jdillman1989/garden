@@ -1,16 +1,24 @@
 var ctx = null;
+var canvas = null;
 var sprites = {};
 
 window.onload = function(){
   loadSprites();
   $.ajaxSetup({ cache: false });
-  ctx = document.getElementById('game').getContext("2d");
+  canvas = document.getElementById('game');
+  ctx = canvas.getContext("2d");
   if(ctx==null){
     $('.message').text("page error");
   }
   else{
     loadGame();
   }
+
+  canvas.addEventListener('mousemove', function(e) {
+    var mousePos = getMousePos(e);
+    var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+    console.log(message);
+  }, false);
 };
 
 function newGame(){
@@ -68,4 +76,18 @@ function loadSprites(){
       }
     }
   });
+}
+
+function getMousePos(e) {
+
+  var rect = canvas.getBoundingClientRect();
+
+  return {
+    x: e.clientX - rect.left,
+    y: e.clientY - rect.top
+  };
+}
+
+function highlightTile(tile) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
