@@ -62,9 +62,9 @@ function loadSprites(){
     type: "GET",
     url: 'api/load_sprites.php',
     complete: function(response) {
-      var data = JSON.parse(response);
       console.log("sprites:");
       console.log(response);
+      var data = JSON.parse(response);
       console.log(data);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
