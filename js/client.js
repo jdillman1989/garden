@@ -1,4 +1,5 @@
 var ctx = null;
+var sprites = {};
 
 window.onload = function(){
   loadSprites();
@@ -39,15 +40,9 @@ function loadGame(){
           ctx.fillStyle = data.map[currentPos].render.base;
           ctx.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
 
-          if(data.map[currentPos].render.sprite){
-            console.log('sprite: ' + data.map[currentPos].render.sprite);
-            var sprite = new Image();
-            sprite.src = "sprites/" + data.map[currentPos].render.sprite;
-            sprite.onload = function() {
-              console.log(sprite);
-              console.log("pos: " + (x*tileSize) + ", " + (y*tileSize));
-              ctx.drawImage(sprite, x*tileSize, y*tileSize, tileSize, tileSize);
-            };
+          var thisSprite = data.map[currentPos].render.sprite;
+          if(thisSprite){
+            ctx.drawImage(thisSprite, x*tileSize, y*tileSize, tileSize, tileSize);
           }
         }
       }
@@ -67,6 +62,10 @@ function loadSprites(){
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
         thisSprite.src = data[i];
+        thisSprite.onload = function() {
+          var spriteName = data[i].replace("sprites/", "");
+          sprites[spriteName] = thisSprite;
+        };
       }
     }
   });
