@@ -8,5 +8,6 @@ foreach ($dir as $fileinfo) {
     $files[] = '../sprites/'.$name;
   }
 }
+
 $response = json_encode($files);
 echo $response;
