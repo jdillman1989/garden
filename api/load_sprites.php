@@ -5,7 +5,7 @@ $files = array();
 foreach ($dir as $fileinfo) {
   $name = $fileinfo->getFilename();
   if ($name != '.DS_Store' && $name != '.' && $name != '..') {
-    $files[] = '../sprites/'.$name;
+    $files[] = 'sprites/'.$name;
   }
 }
 

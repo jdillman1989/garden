@@ -61,8 +61,8 @@ function loadSprites(){
   $.ajax({
     type: "GET",
     url: 'api/load_sprites.php',
-    success: function(response){
-      var data = JSON.parse(response.responseText);
+    complete: function(response) {
+      var data = JSON.parse(response);
       console.log("sprites:");
       console.log(response);
       console.log(data);
@@ -70,9 +70,6 @@ function loadSprites(){
         var thisSprite = new Image();
         thisSprite.src = data[i];
       }
-    },
-    failure: function(){
-      $('.message').text("server error: loadSprites");
     }
   });
 }
