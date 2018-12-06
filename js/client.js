@@ -28,8 +28,6 @@ function newGame(){
 function loadGame(){
   $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
-      console.log("save:");
-      console.log(data);
 
       var tileSize = data.globals.tileSize,
           mapW = data.globals.mapW,
@@ -38,12 +36,12 @@ function loadGame(){
       for(var y = 0; y < mapH; ++y){
         for(var x = 0; x < mapW; ++x){
           var currentPos = ((y*mapW)+x);
-          ctx.fillStyle = data.render.base;
+          ctx.fillStyle = data.map[currentPos].render.base;
           ctx.fillRect( x*tileSize, y*tileSize, tileSize, tileSize);
 
-          if(data.render.sprite){
+          if(data.map[currentPos].render.sprite){
             sprite = new Image();
-            sprite.src = "sprites/" + data.render.sprite;
+            sprite.src = "sprites/" + data.map[currentPos].render.sprite;
             sprite.onload = function() {
               context.drawImage(sprite, x*tileSize, y*tileSize);
             };
