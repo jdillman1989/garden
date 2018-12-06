@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "init": false,
+    "mapW": 20,
+    "mapH": 20,
+    "tileSize": 16
+  },
+  "map": [],
+  "character": {
+    "money": 0,
+    "inv": {
+
+    },
+  },
+  "pets": []
+}
