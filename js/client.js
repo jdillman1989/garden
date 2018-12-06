@@ -50,6 +50,7 @@ function loadGame(){
           }
         }
       }
+      requestAnimationFrame(loadGame);
     }
     else{
       newGame();
@@ -62,11 +63,7 @@ function loadSprites(){
     type: "GET",
     url: 'api/load_sprites.php',
     complete: function(response) {
-      console.log("sprites:");
-      console.log(response);
-      console.log(response.responseText);
       var data = JSON.parse(response.responseText);
-      console.log(data);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
         thisSprite.src = data[i];
