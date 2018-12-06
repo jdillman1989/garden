@@ -61,10 +61,9 @@ function loadSprites(){
       var data = JSON.parse(response.responseText);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
-        var src = data[i];
-        thisSprite.src = src;
+        thisSprite.src = data[i];
         thisSprite.onload = function() {
-          console.log(src);
+          var src = thisSprite.src;
           var spriteName = src.replace("sprites/", "");
           sprites[spriteName] = thisSprite;
         };
