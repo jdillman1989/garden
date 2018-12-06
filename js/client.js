@@ -61,11 +61,11 @@ function loadSprites(){
       var data = JSON.parse(response.responseText);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
-        thisSprite.src = data[i];
-        console.log(data[i]);
+        var src = data[i];
+        thisSprite.src = src;
         thisSprite.onload = function() {
-          console.log(data[i]);
-          var spriteName = data[i].replace("sprites/", "");
+          console.log(src);
+          var spriteName = src.replace("sprites/", "");
           sprites[spriteName] = thisSprite;
         };
       }
