@@ -43,7 +43,7 @@ function loadGame(){
             sprite = new Image();
             sprite.src = "sprites/" + data.map[currentPos].render.sprite;
             sprite.onload = function() {
-              context.drawImage(sprite, x*tileSize, y*tileSize);
+              ctx.drawImage(sprite, x*tileSize, y*tileSize);
             };
           }
         }
