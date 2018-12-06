@@ -27,7 +27,7 @@ function newGame(){
 }
 
 function loadGame(){
-  console.log(sprites);
+  // console.log(sprites);
   $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
 
@@ -62,13 +62,13 @@ function loadSprites(){
       var data = JSON.parse(response.responseText);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
-        thisSprite.src = data[i];
         thisSprite.onload = function() {
           var src = thisSprite.src;
-          var spriteName = src.replace("sprites/", "");
+          var spriteName = src.replace("http://games.jdillman.com/garden/sprites/", "");
           console.log(spriteName);
           sprites[spriteName] = thisSprite;
         };
+        thisSprite.src = data[i];
       }
     }
   });
