@@ -41,7 +41,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
       "pass" => true,
     ],
     "render" => [
-      "base" => $colors[$color[0]],
+      "base" => $colors[$color],
       "sprite" => $sprite,
     ],
   ];
