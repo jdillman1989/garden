@@ -16,7 +16,7 @@ window.onload = function(){
 
   canvas.addEventListener('mousemove', function(e) {
     var mousePos = getCursorTile(e);
-    console.log(mousePos);
+    highlightTile(mousePos);
   }, false);
 };
 
