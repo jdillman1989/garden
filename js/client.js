@@ -8,7 +8,7 @@ window.onload = function(){
     $('.message').text("page error");
   }
   else{
-    requestAnimationFrame(loadGame);
+    loadGame();
   }
 };
 
@@ -50,7 +50,6 @@ function loadGame(){
           }
         }
       }
-      requestAnimationFrame(loadGame);
     }
     else{
       newGame();
