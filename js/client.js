@@ -62,6 +62,7 @@ function loadSprites(){
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
         thisSprite.src = data[i];
+        console.log(data[i]);
         thisSprite.onload = function() {
           console.log(data[i]);
           var spriteName = data[i].replace("sprites/", "");
