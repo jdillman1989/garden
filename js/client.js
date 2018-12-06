@@ -64,7 +64,8 @@ function loadSprites(){
     complete: function(response) {
       console.log("sprites:");
       console.log(response);
-      var data = JSON.parse(response);
+      console.log(response.responseText);
+      var data = JSON.parse(response.responseText);
       console.log(data);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
