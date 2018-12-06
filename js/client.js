@@ -63,12 +63,9 @@ function loadSprites(){
       var data = JSON.parse(response.responseText);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
-        thisSprite.onload = function() {
-          var src = thisSprite.src;
-          var spriteName = src.replace("http://games.jdillman.com/garden/sprites/", "");
-          sprites[spriteName] = thisSprite;
-        };
         thisSprite.src = data[i];
+        var spriteName = data[i].replace("sprites/", "");
+        sprites[spriteName] = thisSprite;        
       }
     }
   });
