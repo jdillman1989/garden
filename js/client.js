@@ -39,13 +39,13 @@ function loadGame(){
           ctx.fillStyle = data.map[currentPos].render.base;
           ctx.fillRect( x*tileSize, y*tileSize, tileSize, tileSize);
 
-          if(data.map[currentPos].render.sprite){
-            sprite = new Image();
-            sprite.src = "sprites/" + data.map[currentPos].render.sprite;
-            sprite.onload = function() {
-              ctx.drawImage(sprite, x*tileSize, y*tileSize);
-            };
-          }
+          // if(data.map[currentPos].render.sprite){
+          //   sprite = new Image();
+          //   sprite.src = "sprites/" + data.map[currentPos].render.sprite;
+          //   sprite.onload = function() {
+          //     ctx.drawImage(sprite, x*tileSize, y*tileSize);
+          //   };
+          // }
         }
       }
     }
