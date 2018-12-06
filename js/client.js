@@ -36,8 +36,10 @@ function loadGame(){
       for(var y = 0; y < mapH; ++y){
         for(var x = 0; x < mapW; ++x){
           var currentPos = ((y*mapW)+x);
+          console.log("color: " + data.map[currentPos].render.base);
+          console.log("pos: " + (x*tileSize) + ", " + (y*tileSize));
           ctx.fillStyle = data.map[currentPos].render.base;
-          ctx.fillRect( x*tileSize, y*tileSize, tileSize, tileSize);
+          ctx.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
 
           // if(data.map[currentPos].render.sprite){
           //   sprite = new Image();
