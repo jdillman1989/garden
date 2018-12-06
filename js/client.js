@@ -88,7 +88,8 @@ function getCursorTile(e) {
 }
 
 function highlightTile(tile) {
-  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  loadGame();
 
   var coords = getTileCoordinates(tile);
   ctx.fillStyle = "#AFA";
