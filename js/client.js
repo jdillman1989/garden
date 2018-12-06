@@ -43,9 +43,9 @@ function loadGame(){
             console.log('sprite: ' + data.map[currentPos].render.sprite);
             var sprite = new Image();
             sprite.src = "sprites/" + data.map[currentPos].render.sprite;
-            console.log(sprite);
-            console.log("pos: " + (x*tileSize) + ", " + (y*tileSize));
             sprite.onload = function() {
+              console.log(sprite);
+              console.log("pos: " + (x*tileSize) + ", " + (y*tileSize));
               ctx.drawImage(sprite, x*tileSize, y*tileSize, tileSize, tileSize);
             };
           }
