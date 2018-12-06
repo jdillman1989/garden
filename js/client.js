@@ -88,5 +88,19 @@ function getCursorTile(e) {
 }
 
 function highlightTile(tile) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  var coords = getTileCoordinates(tile);
+  ctx.fillStyle = "#AFA";
+  ctx.fillRect(coords.x, coords.y, 16, 16);
+}
+
+function getTileCoordinates(tile){
+
+  var yIndex = Math.floor(tile / 20);
+  var xIndex = tile - (yIndex * 20);
+
+  var y = yIndex * 16;
+  var x = xIndex * 16;
+  return {x:x, y:y};
 }
