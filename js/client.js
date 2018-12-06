@@ -1,6 +1,7 @@
 var ctx = null;
 
 window.onload = function(){
+  loadSprites();
   $.ajaxSetup({ cache: false });
   ctx = document.getElementById('game').getContext("2d");
   if(ctx==null){
@@ -27,7 +28,6 @@ function newGame(){
 function loadGame(){
   $.getJSON('../saves/save.json', function(data){
     if (data.globals.init){
-      loadSprites();
       console.log("save:");
       console.log(data);
 
@@ -43,7 +43,7 @@ function loadGame(){
 
           if(data.render.sprite){
             sprite = new Image();
-            sprite.src = data.render.sprite;
+            sprite.src = "../sprites/" + data.render.sprite;
             sprite.onload = function() {
               context.drawImage(sprite, x*tileSize, y*tileSize);
             };
