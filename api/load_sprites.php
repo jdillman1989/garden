@@ -9,4 +9,4 @@ foreach ($dir as $fileinfo) {
   }
 }
 
-return $files;
+echo $files;

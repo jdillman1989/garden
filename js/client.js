@@ -61,8 +61,10 @@ function loadSprites(){
   $.ajax({
     type: "GET",
     url: 'api/load_sprites.php',
-    success: function(data){
+    success: function(response){
+      var data = JSON.parse(response.responseText);
       console.log("sprites:");
+      console.log(response);
       console.log(data);
       for (var i = 0; i < data.length; i++) {
         var thisSprite = new Image();
