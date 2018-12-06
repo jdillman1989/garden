@@ -15,9 +15,8 @@ window.onload = function(){
   }
 
   canvas.addEventListener('mousemove', function(e) {
-    var mousePos = getMousePos(e);
-    var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-    console.log(message);
+    var mousePos = getCursorTile(e);
+    console.log(mousePos);
   }, false);
 };
 
@@ -78,14 +77,14 @@ function loadSprites(){
   });
 }
 
-function getMousePos(e) {
+function getCursorTile(e) {
 
   var rect = canvas.getBoundingClientRect();
+  var x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
 
-  return {
-    x: e.clientX - rect.left,
-    y: e.clientY - rect.top
-  };
+  var tile = ((Math.ceil(y / 16) - 1) * 20) + (Math.ceil(x / 16) - 1);
+  return tile;
 }
 
 function highlightTile(tile) {
