@@ -27,6 +27,7 @@ function newGame(){
 }
 
 function loadGame(){
+  console.log(sprites);
   $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
 
@@ -65,6 +66,7 @@ function loadSprites(){
         thisSprite.onload = function() {
           var src = thisSprite.src;
           var spriteName = src.replace("sprites/", "");
+          console.log(spriteName);
           sprites[spriteName] = thisSprite;
         };
       }
