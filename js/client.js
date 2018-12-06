@@ -42,7 +42,7 @@ function loadGame(){
 
           var thisSprite = data.map[currentPos].render.sprite;
           if(thisSprite){
-            ctx.drawImage(thisSprite, x*tileSize, y*tileSize, tileSize, tileSize);
+            ctx.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
           }
         }
       }
@@ -63,6 +63,7 @@ function loadSprites(){
         var thisSprite = new Image();
         thisSprite.src = data[i];
         thisSprite.onload = function() {
+          console.log(data[i]);
           var spriteName = data[i].replace("sprites/", "");
           sprites[spriteName] = thisSprite;
         };
