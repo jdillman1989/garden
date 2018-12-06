@@ -27,7 +27,6 @@ function newGame(){
 }
 
 function loadGame(){
-  console.log(sprites);
   $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
 
@@ -70,4 +69,3 @@ function loadSprites(){
     }
   });
 }
-
