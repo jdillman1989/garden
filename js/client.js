@@ -15,7 +15,7 @@ window.onload = function(){
 function newGame(){
   $.ajax({
     type: "GET",
-    url: '../api/init.php',
+    url: 'api/init.php',
     success: function(){
       loadGame();
     },
@@ -26,7 +26,7 @@ function newGame(){
 }
 
 function loadGame(){
-  $.getJSON('../saves/save.json', function(data){
+  $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
       console.log("save:");
       console.log(data);
@@ -43,7 +43,7 @@ function loadGame(){
 
           if(data.render.sprite){
             sprite = new Image();
-            sprite.src = "../sprites/" + data.render.sprite;
+            sprite.src = "sprites/" + data.render.sprite;
             sprite.onload = function() {
               context.drawImage(sprite, x*tileSize, y*tileSize);
             };
@@ -60,7 +60,7 @@ function loadGame(){
 function loadSprites(){
   $.ajax({
     type: "GET",
-    url: '../api/load_sprites.php',
+    url: 'api/load_sprites.php',
     success: function(data){
       console.log("sprites:");
       console.log(data);
