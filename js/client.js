@@ -1,5 +1,11 @@
-var ctx = null;
-var canvas = null;
+var saveCTX = null;
+var animCTX = null;
+var interactCTX = null;
+
+var saveCanvas = null;
+var animCanvas = null;
+var interactCanvas = null;
+
 var sprites = {};
 
 var tileSize = 0,
@@ -10,16 +16,18 @@ var tileSize = 0,
 window.onload = function(){
   loadSprites();
   $.ajaxSetup({ cache: false });
-  canvas = document.getElementById('game');
-  ctx = canvas.getContext("2d");
-  if(ctx==null){
-    $('.message').text("page error");
-  }
-  else{
-    loadGame();
-  }
 
-  canvas.addEventListener('mousemove', function(e) {
+  saveCanvas = document.getElementById('save');
+  animCanvas = document.getElementById('animation');
+  interactCanvas = document.getElementById('interaction');
+
+  saveCTX = saveCanvas.getContext("2d");
+  animCTX = animCanvas.getContext("2d");
+  interactCTX = interactCanvas.getContext("2d");
+
+  loadGame();
+
+  interactCanvas.addEventListener('mousemove', function(e) {
     var mousePos = getCursorTile(e);
     highlightTile(mousePos);
   }, false);
@@ -59,13 +67,13 @@ function drawGame(){
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
       var currentPos = ((y*mapW)+x);
-      ctx.fillStyle = map[currentPos].render.base;
-      ctx.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
+      saveCTX.fillStyle = map[currentPos].render.base;
+      saveCTX.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
 
       var thisSprite = map[currentPos].render.sprite;
       if(thisSprite){
         console.log(sprites[thisSprite]);
-        ctx.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
+        saveCTX.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
       }
     }
   }
@@ -89,7 +97,7 @@ function loadSprites(){
 
 function getCursorTile(e) {
 
-  var rect = canvas.getBoundingClientRect();
+  var rect = saveCanvas.getBoundingClientRect();
   var x = e.clientX - rect.left,
       y = e.clientY - rect.top;
 
@@ -98,12 +106,11 @@ function getCursorTile(e) {
 }
 
 function highlightTile(tile) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  drawGame();
+  interactCTX.clearRect(0, 0, interactCanvas.width, interactCanvas.height);
 
   var coords = getTileCoordinates(tile);
-  ctx.fillStyle = "#AFA";
-  ctx.fillRect(coords.x, coords.y, 16, 16);
+  interactCTX.fillStyle = "#AFA";
+  interactCTX.fillRect(coords.x, coords.y, 16, 16);
 }
 
 function getTileCoordinates(tile){

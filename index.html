@@ -16,23 +16,43 @@
     font-size: 18px;
   }
 
-  main, div{
+  main{
     width: 100%;
-    max-width: 700px;
+    max-width: 640px;
     margin: 10px auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .game{
+    width: 640px;
+    position: relative;
+  }
+
+  canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 640px;
+    height: 640px;
+  }
+
 </style>
 
 </head>
 <body>
 
 <main>
-  <div>
-    <canvas id="game" width="600" height="600"></canvas>
+  <div class="game">
+    <canvas id="save" width="320" height="320" style="z-index: 1;"></canvas>
+    <canvas id="animation" width="320" height="320" style="z-index: 2;"></canvas>
+    <canvas id="interaction" width="320" height="320" style="z-index: 3;"></canvas>
   </div>
 
   <div>
