@@ -101,7 +101,7 @@ function getCursorTile(e) {
   var x = e.clientX - rect.left,
       y = e.clientY - rect.top;
 
-  var tile = ((Math.ceil(y / 16) - 1) * 20) + (Math.ceil(x / 16) - 1);
+  var tile = ((Math.ceil(y / (16 * 2)) - 1) * 20) + (Math.ceil(x / (16 * 2)) - 1);
   return tile;
 }
 
@@ -109,7 +109,7 @@ function highlightTile(tile) {
   interactCTX.clearRect(0, 0, interactCanvas.width, interactCanvas.height);
 
   var coords = getTileCoordinates(tile);
-  interactCTX.fillStyle = "#AFA";
+  interactCTX.fillStyle = "rgba(180, 255, 180, 0.6)";
   interactCTX.fillRect(coords.x, coords.y, 16, 16);
 }
 
