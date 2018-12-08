@@ -18,7 +18,7 @@ $colors = [
   "#4CEA38",
 ];
 
-function is_map_edge($tile){
+function is_map_edge($tile, $map_w, $map_h){
         
   if (
     // top
@@ -44,7 +44,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
   $pass = false;
   $type = 'building';
 
-  if (is_map_edge($i)) {
+  if (is_map_edge($i, $map_w, $map_h)) {
     $sprite = 'fence.png';
   }
   else{
