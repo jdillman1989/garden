@@ -18,27 +18,70 @@ $colors = [
   "#4CEA38",
 ];
 
+function is_map_edge($tile){
+        
+  if (
+    // top
+    $tile < $map_w || 
+    // left
+    ($tile % $map_w) == 0 || 
+    // right
+    (($tile + 1) % $map_w) == 0 || 
+    // bottom
+    $tile > (($map_w * $map_h) - $map_w)
+    ) {
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
 
   $color = array_rand($colors, 1);
-
-  $rng = mt_rand(0, 1);
   $sprite = '';
-  if ($rng) {
-    $rng = mt_rand(0, 1);
-    $sprite = 'grass'. ($rng + 1) .'.png';
+  $pass = false;
+  $type = 'building';
+
+  if (is_map_edge($i)) {
+    $sprite = 'fence.png';
   }
   else{
-    $sprite = false;
+    $type = 'ground';
+    $pass = true;
+    $rng = mt_rand(0, 1);
+    if ($rng) {
+      $rng = mt_rand(0, 1);
+      $sprite = 'grass'. ($rng + 1) .'.png';
+    }
+    else{
+      $sprite = false;
+    }
+  }
+
+  switch ($i) {
+    case 2:
+      $sprite = 'house1.png';
+      break;
+    case 3:
+      $sprite = 'house2.png';
+      break;
+    case $map_w + 2:
+      $sprite = 'house3.png';
+      break;
+    case $map_w + 3:
+      $sprite = 'house4.png';
+      break;
   }
 
   $game_map[] = [
     "id" => $i, 
     "state" => [
-      "type" => "ground",
+      "type" => $i,
       "watered" => 0,
       "ferts" => 0,
-      "pass" => true,
+      "pass" => $pass,
     ],
     "render" => [
       "base" => $colors[$color],

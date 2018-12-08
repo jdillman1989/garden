@@ -1,8 +1,8 @@
 {
   "globals": {
     "init": false,
-    "mapW": 20,
-    "mapH": 20,
+    "mapW": 25,
+    "mapH": 25,
     "tileSize": 16
   },
   "map": [],

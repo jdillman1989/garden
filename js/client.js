@@ -10,8 +10,7 @@ var sprites = {};
 
 var tileSize = 0,
     mapW = 0,
-    mapH = 0,
-    map = [];
+    mapH = 0;
 
 window.onload = function(){
   loadSprites();
@@ -52,10 +51,10 @@ function loadGame(){
 
       tileSize = data.globals.tileSize,
       mapW = data.globals.mapW,
-      mapH = data.globals.mapH,
-      map = data.map;
+      mapH = data.globals.mapH;
+      var map = data.map;
 
-      drawGame(tileSize, mapW, mapH, map);
+      drawGame(map);
     }
     else{
       newGame();
@@ -63,7 +62,7 @@ function loadGame(){
   });
 }
 
-function drawGame(){
+function drawGame(map){
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
       var currentPos = ((y*mapW)+x);
@@ -101,7 +100,7 @@ function getCursorTile(e) {
   var x = e.clientX - rect.left,
       y = e.clientY - rect.top;
 
-  var tile = ((Math.ceil(y / (16 * 2)) - 1) * 20) + (Math.ceil(x / (16 * 2)) - 1);
+  var tile = ((Math.ceil(y / (tileSize * 2)) - 1) * mapW) + (Math.ceil(x / (tileSize * 2)) - 1);
   return tile;
 }
 
@@ -110,15 +109,20 @@ function highlightTile(tile) {
 
   var coords = getTileCoordinates(tile);
   interactCTX.fillStyle = "rgba(180, 255, 180, 0.6)";
-  interactCTX.fillRect(coords.x, coords.y, 16, 16);
+  interactCTX.fillRect(coords.x, coords.y, tileSize, tileSize);
 }
 
 function getTileCoordinates(tile){
 
-  var yIndex = Math.floor(tile / 20);
-  var xIndex = tile - (yIndex * 20);
+  var yIndex = Math.floor(tile / mapW);
+  var xIndex = tile - (yIndex * mapW);
 
-  var y = yIndex * 16;
-  var x = xIndex * 16;
+  var y = yIndex * tileSize;
+  var x = xIndex * tileSize;
   return {x:x, y:y};
 }
+
+// 0  1  2  3  4  5  6  7
+// 8  9  10 11 12 13 14 15
+// 16 17 18 19 20 21 22 23
+// 24 25 26 27 28 29 30 31
