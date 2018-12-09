@@ -53,7 +53,13 @@ window.onload = function(){
         selectTiles(endyIndex, endxIndex, startyIndex, startxIndex);
       }
       // Drag Direction ↗
+      else if (startyIndex > endyIndex && startxIndex < endxIndex) {
+        selectTiles(endyIndex, startxIndex, startyIndex, endxIndex);
+      }
       // Drag Direction ↙
+      else if (startyIndex < endyIndex && startxIndex > endxIndex) {
+        selectTiles(startyIndex, endxIndex, endyIndex, startxIndex);
+      }
       // Drag Direction ↘
       else{
         selectTiles(startyIndex, startxIndex, endyIndex, endxIndex);
