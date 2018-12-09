@@ -48,9 +48,13 @@ window.onload = function(){
           endyIndex = Math.floor(mousePos / mapW),
           endxIndex = mousePos - (endyIndex * mapW);
 
-      if (startSelect > mousePos) {
+      // Drag Direction ↖
+      if (startyIndex > endyIndex && startxIndex > endxIndex) {
         selectTiles(endyIndex, endxIndex, startyIndex, startxIndex);
       }
+      // Drag Direction ↗
+      // Drag Direction ↙
+      // Drag Direction ↘
       else{
         selectTiles(startyIndex, startxIndex, endyIndex, endxIndex);
       }
