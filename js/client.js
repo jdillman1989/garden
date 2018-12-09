@@ -156,8 +156,8 @@ function selectTiles(start, end) {
       endyIndex = Math.floor(end / mapW),
       endxIndex = end - (endyIndex * mapW);
 
-  for(var y = startyIndex; y < endyIndex; ++y){
-    for(var x = startxIndex; x < endxIndex; ++x){
+  for(var y = startyIndex; y <= endyIndex; ++y){
+    for(var x = startxIndex; x <= endxIndex; ++x){
       var currentPos = ((y*mapW)+x);
       selectedTiles.push(currentPos);
     }
