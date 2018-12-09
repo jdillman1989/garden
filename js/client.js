@@ -42,7 +42,18 @@ window.onload = function(){
     var mousePos = getCursorTile(e);
     highlightTile(mousePos);
     if(dragging){
-      selectTiles(startSelect, mousePos);
+
+      var startyIndex = Math.floor(startSelect / mapW),
+          startxIndex = startSelect - (startyIndex * mapW),
+          endyIndex = Math.floor(mousePos / mapW),
+          endxIndex = mousePos - (endyIndex * mapW);
+
+      if (startSelect > mousePos) {
+        selectTiles(endyIndex, endxIndex, startyIndex, startxIndex);
+      }
+      else{
+        selectTiles(startyIndex, startxIndex, endyIndex, endxIndex);
+      }
     }
   }, false);
 };
@@ -147,14 +158,9 @@ function getTileCoordinates(tile){
   return {x:x, y:y};
 }
 
-function selectTiles(start, end) {
+function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
 
   var selectedTiles = [];
-
-  var startyIndex = Math.floor(start / mapW),
-      startxIndex = start - (startyIndex * mapW),
-      endyIndex = Math.floor(end / mapW),
-      endxIndex = end - (endyIndex * mapW);
 
   for(var y = startyIndex; y <= endyIndex; ++y){
     for(var x = startxIndex; x <= endxIndex; ++x){
