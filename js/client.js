@@ -49,15 +49,15 @@ window.onload = function(){
           endxIndex = mousePos - (endyIndex * mapW);
 
       // Drag Direction ↖
-      if (startyIndex > endyIndex && startxIndex > endxIndex) {
+      if (startyIndex >= endyIndex && startxIndex >= endxIndex) {
         selectTiles(endyIndex, endxIndex, startyIndex, startxIndex);
       }
       // Drag Direction ↗
-      else if (startyIndex > endyIndex && startxIndex < endxIndex) {
+      else if (startyIndex >= endyIndex && startxIndex <= endxIndex) {
         selectTiles(endyIndex, startxIndex, startyIndex, endxIndex);
       }
       // Drag Direction ↙
-      else if (startyIndex < endyIndex && startxIndex > endxIndex) {
+      else if (startyIndex <= endyIndex && startxIndex >= endxIndex) {
         selectTiles(startyIndex, endxIndex, endyIndex, startxIndex);
       }
       // Drag Direction ↘
