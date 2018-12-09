@@ -131,7 +131,7 @@ function highlightTiles(tiles) {
   interactCTX.clearRect(0, 0, interactCanvas.width, interactCanvas.height);
 
   for (var i = 0; i < tiles.length; i++) {
-    var coords = getTileCoordinates(tile);
+    var coords = getTileCoordinates(tiles[i]);
     interactCTX.fillStyle = "rgba(180, 255, 180, 0.6)";
     interactCTX.fillRect(coords.x, coords.y, tileSize, tileSize);
   }
