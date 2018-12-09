@@ -26,9 +26,24 @@ window.onload = function(){
 
   loadGame();
 
+  var dragging = false;
+  var startSelect = 0;
+
+  interactCanvas.addEventListener('mousedown', function(e) {
+    dragging = true;
+    startSelect = getCursorTile(e);
+  }, false);
+
+  interactCanvas.addEventListener('mouseup', function(e) {
+    dragging = false;
+  }, false);
+
   interactCanvas.addEventListener('mousemove', function(e) {
     var mousePos = getCursorTile(e);
     highlightTile(mousePos);
+    if(dragging){
+      selectTiles(startSelect, mousePos);
+    }
   }, false);
 };
 
@@ -112,6 +127,16 @@ function highlightTile(tile) {
   interactCTX.fillRect(coords.x, coords.y, tileSize, tileSize);
 }
 
+function highlightTiles(tiles) {
+  interactCTX.clearRect(0, 0, interactCanvas.width, interactCanvas.height);
+
+  for (var i = 0; i < tiles.length; i++) {
+    var coords = getTileCoordinates(tile);
+    interactCTX.fillStyle = "rgba(180, 255, 180, 0.6)";
+    interactCTX.fillRect(coords.x, coords.y, tileSize, tileSize);
+  }
+}
+
 function getTileCoordinates(tile){
 
   var yIndex = Math.floor(tile / mapW);
@@ -122,7 +147,36 @@ function getTileCoordinates(tile){
   return {x:x, y:y};
 }
 
+function selectTiles(start, end) {
+
+  var selectedTiles = [];
+
+  var startyIndex = Math.floor(start / mapW),
+      startxIndex = start - (startyIndex * mapW),
+      endyIndex = Math.floor(end / mapW),
+      endxIndex = end - (endyIndex * mapW);
+
+  for(var y = startyIndex; y < endyIndex; ++y){
+    for(var x = startxIndex; x < endxIndex; ++x){
+      var currentPos = ((y*mapW)+x);
+      selectedTiles.push(currentPos);
+    }
+  }
+
+  highlightTiles(selectedTiles);
+}
+
 // 0  1  2  3  4  5  6  7
 // 8  9  10 11 12 13 14 15
 // 16 17 18 19 20 21 22 23
 // 24 25 26 27 28 29 30 31
+
+
+
+
+
+
+
+
+
+
