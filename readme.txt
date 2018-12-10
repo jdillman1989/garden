@@ -2,13 +2,11 @@ To Do:
 
 shortterm
 
-Fix missing globals and API interactions
-Perimeter Fence, and House tiles
-Draw boxes
 Change and save tile states
 Game timer (grow crops)
-UI Section (Toolbox, Money, Messages)
+UI Section (Toolbox, Money, Messages, Market)
 Tile interactions (sell crops)
+
 
 
 longterm
@@ -19,5 +17,13 @@ https://www.html5rocks.com/en/tutorials/canvas/performance/
 Adjustable Viewport:
 https://developer.mozilla.org/en-US/docs/Games/Techniques/Tilemaps
 
-Animated Characters:
+Animation:
 http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/
+
+Validation:
+
+Dedicated server:
+
+Player Interactions???:
+-Dynamic Markets
+

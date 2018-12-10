@@ -11,11 +11,12 @@ $map_w = $currentjson['globals']['mapW'];
 $map_h = $currentjson['globals']['mapH'];
 
 $colors = [
-  "#22EE44",
-  "#22EE44",
-  "#11FF55",
-  "#44EE33",
-  "#4CEA38",
+  "#2C661A",
+  "#2C661A",
+  "#4BA42F",
+  "#4BA42F",
+  "#4BA42F",
+  "#7CD466",
 ];
 
 function is_map_edge($tile, $map_w, $map_h){
