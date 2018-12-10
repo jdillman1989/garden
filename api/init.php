@@ -11,8 +11,6 @@ $map_w = $currentjson['globals']['mapW'];
 $map_h = $currentjson['globals']['mapH'];
 
 $colors = [
-  "#2C661A",
-  "#2C661A",
   "#4BA42F",
   "#4BA42F",
   "#4BA42F",
