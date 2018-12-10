@@ -10,12 +10,15 @@ $tile_size = $currentjson['globals']['tileSize'];
 $map_w = $currentjson['globals']['mapW'];
 $map_h = $currentjson['globals']['mapH'];
 
-$colors = [
-  "#4BA42F",
-  "#4BA42F",
-  "#4BA42F",
-  "#7CD466",
-];
+// $colors = [
+//   "#4BA42F",
+//   "#4BA42F",
+//   "#4BA42F",
+//   "#4BA42F",
+//   "#4BA42F",
+//   "#4BA42F",
+//   "#7CD466",
+// ];
 
 function is_map_edge($tile, $map_w, $map_h){
         
@@ -38,7 +41,7 @@ function is_map_edge($tile, $map_w, $map_h){
 
 for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
 
-  $color = array_rand($colors, 1);
+  // $color = array_rand($colors, 1);
   $sprite = '';
   $pass = false;
   $type = 'building';
@@ -83,7 +86,8 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
       "pass" => $pass,
     ],
     "render" => [
-      "base" => $colors[$color],
+      // "base" => $colors[$color],
+      "base" => '#4BA42F',
       "sprite" => $sprite,
     ],
   ];
