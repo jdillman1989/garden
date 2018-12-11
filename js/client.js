@@ -45,12 +45,12 @@ window.onload = function(){
       });
     }, 2000);
 
-    console.log(currentSelection);
+    var data = currentSelection.join(",");
 
     $.ajax({
       type: "GET",
       url: 'api/get-action.php',
-      data: { data: currentSelection },
+      data: {data:data},
       async: false,
       complete: function (data) {
         console.log(data);
