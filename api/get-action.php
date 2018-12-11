@@ -3,9 +3,9 @@
 $current = file_get_contents('../saves/save.json');
 $currentjson = json_decode($current, true);
 
-$tileset = json_decode($_GET["data"], true);
+$tileset = $_GET["data"];
 
-var_dump($tileset);
+var_dump($_GET["data"]);
 
 foreach ($tileset as $tile) {
   $currentjson['map'][$tile]['render']['sprite'] = 'till.png';
