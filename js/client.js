@@ -39,7 +39,11 @@ window.onload = function(){
 
     dragging = false;
 
-    watch();
+    var watch = setInterval(function(){
+      $.getJSON('saves/save.json', function(data){
+        drawGame(data.map);
+      });
+    }, 2000);
 
     console.log(currentSelection);
 
@@ -50,7 +54,7 @@ window.onload = function(){
       async: false,
       complete: function (data) {
         console.log(data);
-        clearInterval();
+        clearInterval(watch);
       }
     });
 
@@ -85,14 +89,6 @@ window.onload = function(){
     }
   }, false);
 };
-
-function watch(){
-  window.setInterval(function(){
-    $.getJSON('saves/save.json', function(data){
-      drawGame(data.map);
-    });
-  }, 2000);
-}
 
 function newGame(){
   $.ajax({
