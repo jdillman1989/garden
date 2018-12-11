@@ -65,15 +65,23 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
   switch ($i) {
     case 2:
       $sprite = 'house1.png';
+      $type = 'building';
+      $pass = false;
       break;
     case 3:
       $sprite = 'house2.png';
+      $type = 'building';
+      $pass = false;
       break;
     case $map_w + 2:
       $sprite = 'house3.png';
+      $type = 'building';
+      $pass = false;
       break;
     case $map_w + 3:
       $sprite = 'house4.png';
+      $type = 'building';
+      $pass = false;
       break;
   }
 
