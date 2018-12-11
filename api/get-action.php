@@ -5,6 +5,8 @@ $currentjson = json_decode($current, true);
 
 $tileset = json_decode($_GET["data"], true);
 
+var_dump($tileset);
+
 foreach ($tileset as $tile) {
   $currentjson['map'][$tile]['render']['sprite'] = 'till.png';
   $currentjson['map'][$tile]['state']['type'] = 'tilled';

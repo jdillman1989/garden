@@ -47,8 +47,9 @@ window.onload = function(){
       type: "GET",
       url: 'api/get-action.php',
       data: { data: currentSelection },
-      complete: function () {
-        console.log("end watch");
+      async: false,
+      complete: function (data) {
+        console.log(data);
         clearInterval();
       }
     });
