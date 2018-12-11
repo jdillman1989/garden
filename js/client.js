@@ -155,6 +155,8 @@ function drawUI(name, money, inv){
   uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
   uiMapW = Math.floor(mapW / 2);
   uiTileSize = tileSize * 2;
+  console.log(inv);
+  console.log(inv[0] + "-inv.png");
   var i = 0;
   for(var y = 0; y < 2; ++y){
     for(var x = 0; x < uiMapW; ++x){
