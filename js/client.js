@@ -53,8 +53,8 @@ window.onload = function(){
       url: 'api/get-action.php',
       data: {data:data},
       async: false,
-      complete: function (data) {
-        console.log(data);
+      complete: function () {
+        console.log("clear");
         clearInterval(watch);
       }
     });
