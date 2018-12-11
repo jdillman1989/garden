@@ -21,10 +21,12 @@ window.onload = function(){
   saveCanvas = document.getElementById('save');
   animCanvas = document.getElementById('animation');
   interactCanvas = document.getElementById('interaction');
+  uiCanvas = document.getElementById('ui');
 
   saveCTX = saveCanvas.getContext("2d");
   animCTX = animCanvas.getContext("2d");
   interactCTX = interactCanvas.getContext("2d");
+  uiCTX = uiCanvas.getContext("2d");
 
   loadGame();
 
@@ -114,13 +116,18 @@ function loadGame(){
       mapW = data.globals.mapW,
       mapH = data.globals.mapH;
       processing = data.globals.processing;
+
       var map = data.map;
+      var name = data.character.name;
+      var money = data.character.money;
+      var inv = data.character.inv;
 
       if(data.globals.processing){
         watch();
       }
 
       drawGame(map);
+      drawUI(name, money, inv);
     }
     else{
       newGame();
@@ -140,6 +147,22 @@ function drawGame(map){
       if(thisSprite){
         saveCTX.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
       }
+    }
+  }
+}
+
+function drawUI(name, money, inv){
+  uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
+  uiMapW = Math.floor(mapW / 2);
+  uiTileSize = tileSize * 2;
+  var i = 0;
+  for(var y = 0; y < 2; ++y){
+    for(var x = 0; x < uiMapW; ++x){
+      saveCTX.drawImage(sprites["slot.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+      if(i < inv.length){
+        saveCTX.drawImage(sprites[inv[i] + "-inv.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+      }
+      i++;
     }
   }
 }

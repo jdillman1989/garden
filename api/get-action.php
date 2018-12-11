@@ -12,6 +12,11 @@ file_put_contents('../saves/save.json', $update);
 $i = 0;
 foreach ($tileset as $tile) {
   $tile = intval($tile);
+
+  if ($currentjson['map'][$tile]['state']['type'] != "ground") {
+    continue;
+  }
+
   $currentjson['map'][$tile]['render']['sprite'] = 'till.png';
   $currentjson['map'][$tile]['state']['type'] = 'tilled';
 
