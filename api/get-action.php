@@ -20,8 +20,14 @@ foreach ($tileset as $tile) {
   $currentjson['map'][$tile]['render']['sprite'] = 'till.png';
   $currentjson['map'][$tile]['state']['type'] = 'tilled';
 
-  if (($i + 1) < count($tileset)) {
-    $currentjson['map'][$tileset[$i + 1]]['render']['sprite'] = 'dig.png';
+  while(($i + 1) < count($tileset)) {
+    if ($currentjson['map'][$tileset[$i + 1]]['state']['type'] != "ground") {
+      $i++;
+    }
+    else{
+      $currentjson['map'][$tileset[$i + 1]]['render']['sprite'] = 'dig.png';
+      break;
+    }
   }
 
   $update = json_encode($currentjson, JSON_PRETTY_PRINT);
