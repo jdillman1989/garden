@@ -31,16 +31,28 @@
     position: relative;
   }
 
+  .ui{
+    width: 800px;
+  }
+
   canvas{
-    position: absolute;
-    top: 0;
-    left: 0;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+  }
+
+  .game canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 800px;
     height: 800px;
+  }
+
+  .ui canvas{
+    width: 800px;
+    height: 400px;
   }
 
 </style>
@@ -53,6 +65,10 @@
     <canvas id="save" width="400" height="400" style="z-index: 1;"></canvas>
     <canvas id="animation" width="400" height="400" style="z-index: 2;"></canvas>
     <canvas id="interaction" width="400" height="400" style="z-index: 3;"></canvas>
+  </div>
+
+  <div class="ui">
+    <canvas id="ui" width="400" height="200"></canvas>
   </div>
 
   <div>
