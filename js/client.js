@@ -7,6 +7,7 @@ var animCanvas = null;
 var interactCanvas = null;
 
 var sprites = {};
+var currentSelection = [];
 
 var tileSize = 0,
     mapW = 0,
@@ -35,7 +36,20 @@ window.onload = function(){
   }, false);
 
   interactCanvas.addEventListener('mouseup', function(e) {
+
     dragging = false;
+
+    watch();
+
+    $.ajax({
+      type: "GET",
+      url: 'api/get-action.php',
+      data: { data: currentSelection },
+      complete: function () {
+        clearInterval();
+      }
+    });
+
   }, false);
 
   interactCanvas.addEventListener('mousemove', function(e) {
@@ -68,6 +82,14 @@ window.onload = function(){
   }, false);
 };
 
+function watch(){
+  window.setInterval(function(){
+    $.getJSON('saves/save.json', function(data){
+      drawGame(data.map);
+    });
+  }, 2000);
+}
+
 function newGame(){
   $.ajax({
     type: "GET",
@@ -99,6 +121,7 @@ function loadGame(){
 }
 
 function drawGame(map){
+  saveCTX.clearRect(0, 0, saveCanvas.width, saveCanvas.height);
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
       var currentPos = ((y*mapW)+x);
@@ -179,11 +202,10 @@ function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
     }
   }
 
+  currentSelection = selectedTiles;
+
   highlightTiles(selectedTiles);
 }
-
-
-
 
 
 
@@ -191,13 +213,6 @@ function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
 // 8  9  10 11 12 13 14 15
 // 16 17 18 19 20 21 22 23
 // 24 25 26 27 28 29 30 31
-
-
-
-
-
-
-
 
 
 
