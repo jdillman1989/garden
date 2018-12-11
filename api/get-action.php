@@ -5,6 +5,8 @@ $currentjson = json_decode($current, true);
 
 $tileset = explode(',', $_GET["data"]);
 
+var_dump($tileset);
+
 $i = 0;
 foreach ($tileset as $tile) {
   $tile = intval($tile);

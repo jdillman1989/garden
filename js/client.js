@@ -41,6 +41,7 @@ window.onload = function(){
 
     var watch = setInterval(function(){
       $.getJSON('saves/save.json', function(data){
+        console.log("drawing...");
         drawGame(data.map);
       });
     }, 2000);
