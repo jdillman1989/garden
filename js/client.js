@@ -39,10 +39,14 @@ window.onload = function(){
 
     dragging = false;
 
+    var i = 0;
     var watch = setInterval(function(){
       $.getJSON('saves/save.json', function(data){
-        console.log("drawing...");
+        if (i == 0) {
+          data.map[currentSelection[0]].render.sprite = 'dig.png';
+        }
         drawGame(data.map);
+        i++;
       });
     }, 2000);
 
@@ -53,7 +57,6 @@ window.onload = function(){
       url: 'api/get-action.php',
       data: {data:data},
       complete: function () {
-        console.log("clear");
         clearInterval(watch);
       }
     });
