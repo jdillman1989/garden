@@ -158,9 +158,9 @@ function drawUI(name, money, inv){
   var i = 0;
   for(var y = 0; y < 2; ++y){
     for(var x = 0; x < uiMapW; ++x){
-      saveCTX.drawImage(sprites["slot.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+      uiCTX.drawImage(sprites["slot.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
       if(i < inv.length){
-        saveCTX.drawImage(sprites[inv[i] + "-inv.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+        uiCTX.drawImage(sprites[inv[i] + "-inv.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
       }
       i++;
     }
