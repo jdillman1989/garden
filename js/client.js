@@ -41,11 +41,14 @@ window.onload = function(){
 
     watch();
 
+    console.log(currentSelection);
+
     $.ajax({
       type: "GET",
       url: 'api/get-action.php',
       data: { data: currentSelection },
       complete: function () {
+        console.log("end watch");
         clearInterval();
       }
     });
@@ -130,7 +133,6 @@ function drawGame(map){
 
       var thisSprite = map[currentPos].render.sprite;
       if(thisSprite){
-        console.log(sprites[thisSprite]);
         saveCTX.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
       }
     }
