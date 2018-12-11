@@ -5,7 +5,9 @@ $currentjson = json_decode($current, true);
 
 $tileset = explode(',', $_GET["data"]);
 
-var_dump($tileset);
+$currentjson['globals']['processing'] = true;
+$update = json_encode($currentjson, JSON_PRETTY_PRINT);
+file_put_contents('../saves/save.json', $update);
 
 $i = 0;
 foreach ($tileset as $tile) {
@@ -22,3 +24,7 @@ foreach ($tileset as $tile) {
   sleep(2);
   $i++;
 }
+
+$currentjson['globals']['processing'] = false;
+$update = json_encode($currentjson, JSON_PRETTY_PRINT);
+file_put_contents('../saves/save.json', $update);

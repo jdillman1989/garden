@@ -8,6 +8,7 @@ var interactCanvas = null;
 
 var sprites = {};
 var currentSelection = [];
+var processing = false;
 
 var tileSize = 0,
     mapW = 0,
@@ -39,26 +40,14 @@ window.onload = function(){
 
     dragging = false;
 
-    var i = 0;
-    var watch = setInterval(function(){
-      $.getJSON('saves/save.json', function(data){
-        if (i == 0) {
-          data.map[currentSelection[0]].render.sprite = 'dig.png';
-        }
-        drawGame(data.map);
-        i++;
-      });
-    }, 2000);
+    watch();
 
     var data = currentSelection.join(",");
 
     $.ajax({
       type: "GET",
       url: 'api/get-action.php',
-      data: {data:data},
-      complete: function () {
-        clearInterval(watch);
-      }
+      data: {data:data}
     });
 
   }, false);
@@ -93,6 +82,17 @@ window.onload = function(){
   }, false);
 };
 
+function watch(){
+  var watch = setInterval(function(){
+    $.getJSON('saves/save.json', function(data){
+      drawGame(data.map);
+      if(!data.globals.processing){
+        clearInterval(watch);
+      }
+    });
+  }, 2000);
+}
+
 function newGame(){
   $.ajax({
     type: "GET",
@@ -113,7 +113,12 @@ function loadGame(){
       tileSize = data.globals.tileSize,
       mapW = data.globals.mapW,
       mapH = data.globals.mapH;
+      processing = data.globals.processing;
       var map = data.map;
+
+      if(data.globals.processing){
+        watch();
+      }
 
       drawGame(map);
     }
