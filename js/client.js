@@ -164,7 +164,11 @@ function drawUI(name, money, inv){
   var i = 0;
   for(var y = 0; y < 2; ++y){
     for(var x = 0; x < uiMapW; ++x){
-      uiCTX.drawImage(sprites["slot.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+      var slot = sprites["slot.png"];
+      if(!i){
+        slot = sprites["slot-sel.png"];
+      }
+      uiCTX.drawImage(slot, x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
       if(i < items.length){
         uiCTX.drawImage(sprites[items[i] + "-inv.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
       }
