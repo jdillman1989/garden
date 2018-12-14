@@ -278,6 +278,7 @@ function changeSlot(slot){
   for(var y = 0; y < uiH; ++y){
     for(var x = 0; x < uiW; ++x){
       var slot = sprites["slot.png"];
+      console.log("compare: " + i + ", " + slot);
       if(i == slot){
         slot = sprites["slot-sel.png"];
       }
