@@ -272,7 +272,7 @@ function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
 
 function changeSlot(slot){
   currentSlot = slot;
-  uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
+  // uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
 
   var i = 0;
   for(var y = 0; y < uiH; ++y){
