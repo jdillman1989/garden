@@ -93,6 +93,7 @@ window.onload = function(){
 
   uiCanvas.addEventListener('mouseup', function(e) {
     thisSlot = getCursorTile(e, true);
+    changeSlot(thisSlot);
   }, false);
 };
 
@@ -268,6 +269,23 @@ function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
   currentSelection = selectedTiles;
 
   highlightTiles(selectedTiles);
+}
+
+function changeSlot(slot){
+  currentSlot = slot;
+  // uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
+
+  var i = 0;
+  for(var y = 0; y < uiH; ++y){
+    for(var x = 0; x < uiW; ++x){
+      var slotSprite = sprites["slot.png"];
+      if(i == slot){
+        slotSprite = sprites["slot-sel.png"];
+      }
+      uiCTX.drawImage(slotSprite, x*slotSize, y*slotSize, slotSize, slotSize);
+      i++;
+    }
+  }
 }
 
 
