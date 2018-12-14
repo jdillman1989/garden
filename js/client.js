@@ -277,12 +277,13 @@ function changeSlot(slot){
   var i = 0;
   for(var y = 0; y < uiH; ++y){
     for(var x = 0; x < uiW; ++x){
-      var slot = sprites["slot.png"];
+      var slotSprite = sprites["slot.png"];
       console.log("compare: " + i + ", " + slot);
       if(i == slot){
-        slot = sprites["slot-sel.png"];
+        slotSprite = sprites["slot-sel.png"];
       }
-      uiCTX.drawImage(slot, x*slotSize, y*slotSize, slotSize, slotSize);
+      uiCTX.drawImage(slotSprite, x*slotSize, y*slotSize, slotSize, slotSize);
+      i++;
     }
   }
 }
