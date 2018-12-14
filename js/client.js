@@ -153,7 +153,7 @@ function loadGame(){
 }
 
 function drawGame(map){
-  saveCTX.clearRect(0, 0, saveCanvas.width, saveCanvas.height);
+  // saveCTX.clearRect(0, 0, saveCanvas.width, saveCanvas.height);
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
       var currentPos = ((y*mapW)+x);
