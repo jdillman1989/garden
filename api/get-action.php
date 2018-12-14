@@ -78,8 +78,15 @@ function plant($tileset, $currentjson, $item_name, $item_amt){
   foreach ($tileset as $tile) {
     $tile = intval($tile);
 
-    if ($currentjson['map'][$tile]['state']['type'] != "tilled" || $item_amt < 1) {
+    if ($currentjson['map'][$tile]['state']['type'] != "tilled") {
       continue;
+    }
+
+    if ($item_amt < 1) {
+      unset($currentjson['character']['inv'][$item_name]);
+      $update = json_encode($currentjson, JSON_PRETTY_PRINT);
+      file_put_contents('../saves/save.json', $update);
+      break;
     }
 
     $item_amt--;
