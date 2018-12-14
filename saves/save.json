@@ -4,6 +4,9 @@
     "mapW": 25,
     "mapH": 25,
     "tileSize": 16,
+    "slotSize": 32,
+    "uiW": 12,
+    "uiH": 2,
     "processing": false
   },
   "map": [],

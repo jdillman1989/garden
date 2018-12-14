@@ -1,18 +1,26 @@
-var saveCTX = null;
-var animCTX = null;
-var interactCTX = null;
+// Canvas Element
+var saveCanvas = null,
+    animCanvas = null,
+    interactCanvas = null;
 
-var saveCanvas = null;
-var animCanvas = null;
-var interactCanvas = null;
+// Canvas Draw
+var saveCTX = null,
+    animCTX = null,
+    interactCTX = null;
 
-var sprites = {};
-var currentSelection = [];
-var processing = false;
+// State Globals
+var currentSelection = [],
+    currentSlot = 0,
+    processing = false;
 
+// Static Globals
 var tileSize = 0,
     mapW = 0,
-    mapH = 0;
+    mapH = 0,
+    slotSize = 0,
+    uiW = 0,
+    uiH = 0,
+    sprites = {};
 
 window.onload = function(){
   loadSprites();
@@ -35,7 +43,7 @@ window.onload = function(){
 
   interactCanvas.addEventListener('mousedown', function(e) {
     dragging = true;
-    startSelect = getCursorTile(e);
+    startSelect = getCursorTile(e, false);
   }, false);
 
   interactCanvas.addEventListener('mouseup', function(e) {
@@ -49,13 +57,13 @@ window.onload = function(){
     $.ajax({
       type: "GET",
       url: 'api/get-action.php',
-      data: {data:data}
+      data: {tiles:data, item:currentSlot}
     });
 
   }, false);
 
   interactCanvas.addEventListener('mousemove', function(e) {
-    var mousePos = getCursorTile(e);
+    var mousePos = getCursorTile(e, false);
     highlightTile(mousePos);
     if(dragging){
 
@@ -82,6 +90,11 @@ window.onload = function(){
       }
     }
   }, false);
+
+  uiCanvas.addEventListener('mouseup', function(e) {
+    thisSlot = getCursorTile(e, true);
+    changeSlot(thisSlot);
+  }, false);
 };
 
 function watch(){
@@ -92,7 +105,7 @@ function watch(){
         clearInterval(watch);
       }
     });
-  }, 2000);
+  }, 1500);
 }
 
 function newGame(){
@@ -112,10 +125,14 @@ function loadGame(){
   $.getJSON('saves/save.json', function(data){
     if (data.globals.init){
 
-      tileSize = data.globals.tileSize,
-      mapW = data.globals.mapW,
+      tileSize = data.globals.tileSize;
+      mapW = data.globals.mapW;
       mapH = data.globals.mapH;
       processing = data.globals.processing;
+
+      slotSize = data.globals.slotSize;
+      uiW = data.globals.uiW;
+      uiH = data.globals.uiH;
 
       var map = data.map;
       var name = data.character.name;
@@ -153,24 +170,20 @@ function drawGame(map){
 
 function drawUI(name, money, inv){
   uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
-  uiMapW = Math.floor(mapW / 2);
-  uiTileSize = tileSize * 2;
 
   var items = Object.keys(inv);
   var quantities = Object.values(inv);
 
-  console.log(items);
-  console.log(items[0] + "-inv.png");
   var i = 0;
-  for(var y = 0; y < 2; ++y){
-    for(var x = 0; x < uiMapW; ++x){
+  for(var y = 0; y < uiH; ++y){
+    for(var x = 0; x < uiW; ++x){
       var slot = sprites["slot.png"];
       if(!i){
         slot = sprites["slot-sel.png"];
       }
-      uiCTX.drawImage(slot, x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+      uiCTX.drawImage(slot, x*slotSize, y*slotSize, slotSize, slotSize);
       if(i < items.length){
-        uiCTX.drawImage(sprites[items[i] + "-inv.png"], x*uiTileSize, y*uiTileSize, uiTileSize, uiTileSize);
+        uiCTX.drawImage(sprites[items[i] + "-inv.png"], x*slotSize, y*slotSize, slotSize, slotSize);
       }
       i++;
     }
@@ -193,13 +206,23 @@ function loadSprites(){
   });
 }
 
-function getCursorTile(e) {
+function getCursorTile(e, ui) {
 
-  var rect = saveCanvas.getBoundingClientRect();
+  if(ui){
+    var size = slotSize,
+        width = uiW,
+        rect = uiCanvas.getBoundingClientRect();
+  }
+  else{
+    var size = tileSize,
+        width = mapW,
+        rect = saveCanvas.getBoundingClientRect();
+  }
+
   var x = e.clientX - rect.left,
       y = e.clientY - rect.top;
 
-  var tile = ((Math.ceil(y / (tileSize * 2)) - 1) * mapW) + (Math.ceil(x / (tileSize * 2)) - 1);
+  var tile = ((Math.ceil(y / (size * 2)) - 1) * width) + (Math.ceil(x / (size * 2)) - 1);
   return tile;
 }
 
@@ -245,6 +268,22 @@ function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
   currentSelection = selectedTiles;
 
   highlightTiles(selectedTiles);
+}
+
+function changeSlot(slot){
+  currentSlot = slot;
+  uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
+
+  var i = 0;
+  for(var y = 0; y < uiH; ++y){
+    for(var x = 0; x < uiW; ++x){
+      var slot = sprites["slot.png"];
+      if(i == slot){
+        slot = sprites["slot-sel.png"];
+      }
+      uiCTX.drawImage(slot, x*slotSize, y*slotSize, slotSize, slotSize);
+    }
+  }
 }
 
 

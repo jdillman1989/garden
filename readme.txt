@@ -2,10 +2,10 @@ To Do:
 
 shortterm
 
-Change and save tile states
-Game timer (grow crops)
 UI Section (Toolbox, Money, Messages, Market)
+Game timer (grow crops)
 Tile interactions (sell crops)
+Tooltips
 
 
 
