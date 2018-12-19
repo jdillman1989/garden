@@ -21,7 +21,7 @@ if ($item < count($inv_index)) {
       till($tileset, $currentjson);
       break;
 
-    case "can":
+    case "watering":
       water($tileset, $currentjson);
       break;
     
@@ -70,7 +70,26 @@ function till($tileset, $currentjson){
 }
 
 function water($tileset, $currentjson){
+  $i = 0;
+  foreach ($tileset as $tile) {
+    $tile = intval($tile);
 
+    if ($currentjson['map'][$tile]['state']['type'] == "ground" || $currentjson['map'][$tile]['state']['type'] == "building" || $currentjson['map'][$tile]['state']['type'] == "water" || $currentjson['map'][$tile]['state']['type'] == "tilled") {
+      continue;
+    }
+
+    $currentjson['map'][$tile]['state']['watered'] = 48;
+    $currentjson['map'][$tile]['render']['base'] = '#4C310B';
+
+    $update = json_encode($currentjson, JSON_PRETTY_PRINT);
+    file_put_contents('../saves/save.json', $update);
+    sleep(1);
+    $i++;
+  }
+
+  $currentjson['globals']['processing'] = false;
+  $update = json_encode($currentjson, JSON_PRETTY_PRINT);
+  file_put_contents('../saves/save.json', $update);
 }
 
 function plant($tileset, $currentjson, $item_name, $item_amt){
@@ -91,6 +110,12 @@ function plant($tileset, $currentjson, $item_name, $item_amt){
 
     $item_amt--;
 
+    if ($currentjson['map'][$tile]['state']['watered']) {
+      $currentjson['map'][$tile]['render']['base'] = '#4C310B';
+    }
+    else{
+      $currentjson['map'][$tile]['render']['base'] = '#A57D28';
+    }
     $currentjson['map'][$tile]['render']['sprite'] = $item_name.'-seed.png';
     $currentjson['map'][$tile]['state']['type'] = $item_name.'.0';
     $currentjson['character']['inv'][$item_name] = $item_amt;

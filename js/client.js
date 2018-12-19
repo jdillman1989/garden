@@ -23,6 +23,11 @@ var tileSize = 0,
     sprites = {};
 
 window.onload = function(){
+
+  ///////////
+  // Setup //
+  ///////////
+
   loadSprites();
   $.ajaxSetup({ cache: false });
 
@@ -36,10 +41,16 @@ window.onload = function(){
   interactCTX = interactCanvas.getContext("2d");
   uiCTX = uiCanvas.getContext("2d");
 
+  updateTime();
+
   loadGame();
 
   var dragging = false;
   var startSelect = 0;
+
+  ////////////////////////
+  // Interaction Events //
+  ////////////////////////
 
   interactCanvas.addEventListener('mousedown', function(e) {
     dragging = true;
@@ -91,10 +102,23 @@ window.onload = function(){
     }
   }, false);
 
+  ///////////////
+  // UI Events //
+  ///////////////
+
   uiCanvas.addEventListener('mouseup', function(e) {
     thisSlot = getCursorTile(e, true);
     changeSlot(thisSlot);
   }, false);
+
+  /////////////////
+  // Update Time //
+  /////////////////
+
+  var look = setInterval(function(){
+    updateTime();
+    look();
+  }, 120000);
 };
 
 function watch(){
@@ -107,6 +131,22 @@ function watch(){
       }
     });
   }, 1500);
+}
+
+function look(){
+  if (!processing) {
+    $.getJSON('saves/save.json', function(data){
+      drawGame(data.map);
+      drawUI(data.character.name, data.character.money, data.character.inv);
+    });
+  }
+}
+
+function updateTime(){
+  $.ajax({
+    type: "GET",
+    url: 'api/time.php'
+  });
 }
 
 function newGame(){

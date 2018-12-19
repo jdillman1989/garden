@@ -2,9 +2,10 @@ To Do:
 
 shortterm
 
-UI Section (Toolbox, Money, Messages, Market)
-Game timer (grow crops)
+Game timer (grow crops, dry tiles)
+UI Section (Amounts, Money, Messages, Market)
 Tile interactions (sell crops)
+Prevent/enable multiple interactions
 Tooltips
 
 
