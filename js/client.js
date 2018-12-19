@@ -115,7 +115,7 @@ window.onload = function(){
   // Update Time //
   /////////////////
 
-  var look = setInterval(function(){
+  var check = setInterval(function(){
     updateTime();
     look();
   }, 120000);
