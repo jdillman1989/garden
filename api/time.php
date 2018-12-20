@@ -33,7 +33,7 @@ if ($last) {
   // Dry
   $increments = round(($passed / $one_hour), 3);
 
-  foreach ($currentjson['map'] as $tile) {
+  for ($tile = 0; $tile < count($currentjson['map']); $tile++) {
 
     $watered = $currentjson['map'][$tile]['state']['watered'];
 
