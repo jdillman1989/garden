@@ -45,7 +45,7 @@ if ($last) {
     if ($watered) {
       $currentjson['map'][$tile]['state']['watered'] = intval($watered) - $increments;
 
-      echo("dry: "intval($watered) - $increments);
+      echo("dry: ".intval($watered) - $increments);
 
       if ((intval($watered) - $increments) <= 0 ) {
         $currentjson['map'][$tile]['state']['watered'] = 0;
