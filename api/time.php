@@ -36,7 +36,7 @@ if ($last) {
     $watered = $currentjson['map'][$tile]['state']['watered'];
 
     if ($watered) {
-      
+
       // Dry
       $currentjson['map'][$tile]['state']['watered'] = floatval($watered) - $increments;
 
@@ -53,7 +53,9 @@ if ($last) {
       $currentjson['map'][$tile]['state']['type'] = $plant[0].'_'.$grow;
 
       $current_stage = floor($grow / $crops[$plant[0]]);
-      $currentjson['map'][$tile]['render']['sprite'] = $plant[0].'-'.$current_stage.'.png';
+      if ($current_stage < 5) {
+        $currentjson['map'][$tile]['render']['sprite'] = $plant[0].'-'.$current_stage.'.png';
+      }
     }
   }
 }
