@@ -91,7 +91,6 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
       "type" => $type,
       "watered" => 0,
       "ferts" => 0,
-      "pass" => $pass,
     ],
     "render" => [
       // "base" => $colors[$color],
