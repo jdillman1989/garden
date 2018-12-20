@@ -78,7 +78,7 @@ function water($tileset, $currentjson){
       continue;
     }
 
-    $currentjson['map'][$tile]['state']['watered'] = 48;
+    $currentjson['map'][$tile]['state']['watered'] = 36;
     $currentjson['map'][$tile]['render']['base'] = '#4C310B';
 
     $update = json_encode($currentjson, JSON_PRETTY_PRINT);
