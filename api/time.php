@@ -27,23 +27,24 @@ $now = strtotime('now');
 $currentjson['globals']['cache'] = $now;
 
 if ($last) {
+
   $passed = $now - $last;
 
   // Dry
-  if ($passed > $one_hour) {
-    $increments = floor($passed / $one_hour);
+  $increments = round(($passed / $one_hour), 3);
 
-    foreach ($currentjson['map'] as $tile) {
+  foreach ($currentjson['map'] as $tile) {
 
-      $watered = $currentjson['map'][$tile]['state']['watered'];
+    $watered = $currentjson['map'][$tile]['state']['watered'];
 
-      if ($watered) {
-        $currentjson['map'][$tile]['state']['watered'] = intval($watered) - $increments;
+    if ($watered) {
+      $currentjson['map'][$tile]['state']['watered'] = intval($watered) - $increments;
 
-        if ((intval($watered) - $increments) <= 0 ) {
-          $currentjson['map'][$tile]['state']['watered'] = 0;
-          $currentjson['map'][$tile]['render']['base'] = '#A57D28';
-        }
+      var_dump(intval($watered) - $increments);
+
+      if ((intval($watered) - $increments) <= 0 ) {
+        $currentjson['map'][$tile]['state']['watered'] = 0;
+        $currentjson['map'][$tile]['render']['base'] = '#A57D28';
       }
     }
   }
