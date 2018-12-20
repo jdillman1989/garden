@@ -44,12 +44,12 @@ if ($last) {
     $watered = $currentjson['map'][$tile]['state']['watered'];
 
     if ($watered) {
-      $currentjson['map'][$tile]['state']['watered'] = intval($watered) - $increments;
+      $currentjson['map'][$tile]['state']['watered'] = floatval($watered) - $increments;
 
-      echo("watered: ".intval($watered).", \n");
-      echo("dry: ".(intval($watered) - $increments).", \n");
+      echo("watered: ".floatval($watered).", \n");
+      echo("dry: ".(floatval($watered) - $increments).", \n");
 
-      if ((intval($watered) - $increments) <= 0 ) {
+      if ((floatval($watered) - $increments) <= 0 ) {
         $currentjson['map'][$tile]['state']['watered'] = 0;
         $currentjson['map'][$tile]['render']['base'] = '#A57D28';
       }
