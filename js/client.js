@@ -232,7 +232,7 @@ function drawUI(name, money, inv){
 
   uiCTX.font = "6px Courier";
   uiCTX.fillStyle = "white";
-  uiCTX.fillText(name + "  $" + money, 0, (slotSize*uiH) + 10;
+  uiCTX.fillText(name + "  $" + money, 0, (slotSize*uiH) + 10);
 }
 
 function loadSprites(){
