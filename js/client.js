@@ -229,6 +229,10 @@ function drawUI(name, money, inv){
       i++;
     }
   }
+
+  uiCTX.font = "6px Courier";
+  uiCTX.fillStyle = "white";
+  uiCTX.fillText(name + "  $" + money, 0, (slotSize*uiH) + 10;
 }
 
 function loadSprites(){
