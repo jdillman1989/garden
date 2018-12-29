@@ -270,6 +270,7 @@ function drawAnim(pets){
   for (var i = 0; i < types.length; i++) {
     for (var j = 0; j < quantities.length; j++) {
       var thisSprite = animatedSprites(sprites[types[i] + ".png"], startTiles[j]['x'], startTiles[j]['y']);
+      console.log("coords " + j + ":" + startTiles[j]['x'] + ", " + startTiles[j]['x']);
       thisSprite.frame(0);
     }
   }
