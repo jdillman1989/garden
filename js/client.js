@@ -143,7 +143,7 @@ window.onload = function(){
     console.log("animals:");
     console.log(animals);
     console.log("rng:");
-    for(var i = 0; i < animals; ++i){
+    for(var i = 0; i < animals.length; ++i){
       var rng = Math.floor(Math.random() * 3);
       console.log(rng);
       if (!rng) {
