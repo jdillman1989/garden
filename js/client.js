@@ -378,7 +378,7 @@ function animatedSprites(thisSprite, x, y){
   var that = {};
 
   that.frame = function (state) {
-    animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
+    animCTX.clearRect(x, y, tileSize, tileSize);
     animCTX.drawImage(
       thisSprite,
       tileSize * state,  // sprite x
