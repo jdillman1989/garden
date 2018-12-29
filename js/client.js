@@ -20,7 +20,8 @@ var tileSize = 0,
     slotSize = 0,
     uiW = 0,
     uiH = 0,
-    sprites = {};
+    sprites = {},
+    animals = [];
 
 // WebFont.load({
 //   google: {
@@ -133,7 +134,28 @@ window.onload = function(){
     updateTime();
     look();
   }, 120000);
+
+  ////////////////
+  // Blink TEST //
+  ////////////////
+
+  var setBlink = setInterval(function(){
+    for(var i = 0; i < animals; ++i){
+      var rng = Math.floor(Math.random() * 3);
+      if (!rng) {
+        blink(animals[i]);
+      }
+    }
+  }, 1000);
+
 };
+
+function blink(animal){
+  animal.frame(1);
+  var thisBlink = setTimeout(function(){
+    animal.frame(0);
+  }, 500);
+}
 
 function watch(){
   var watch = setInterval(function(){
@@ -270,7 +292,7 @@ function drawAnim(pets){
   for (var i = 0; i < types.length; i++) {
     for (var j = 0; j < quantities[i]; j++) {
       var thisSprite = animatedSprites(sprites[types[i] + ".png"], startTiles[j]['x'], startTiles[j]['y']);
-      console.log("coords " + j + ":" + startTiles[j]['x'] + ", " + startTiles[j]['x']);
+      animals.push(thisSprite);
       thisSprite.frame(0);
     }
   }
