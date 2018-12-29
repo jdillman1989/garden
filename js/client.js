@@ -140,17 +140,16 @@ window.onload = function(){
   ////////////////
 
   var setBlink = setInterval(function(){
-    console.log("animals:");
-    console.log(animals);
-    console.log("rng:");
     for(var i = 0; i < animals.length; ++i){
-      var rng = Math.floor(Math.random() * 3);
-      console.log(rng);
+      var rng = Math.floor(Math.random() * 4);
       if (!rng) {
         blink(animals[i]);
       }
+      if (rng == 1) {
+        idle(animals[i]);
+      }
     }
-  }, 1000);
+  }, 1500);
 
 };
 
@@ -158,7 +157,14 @@ function blink(animal){
   animal.frame(1);
   var thisBlink = setTimeout(function(){
     animal.frame(0);
-  }, 500);
+  }, 200);
+}
+
+function idle(animal){
+  animal.frame(2);
+  var thisBlink = setTimeout(function(){
+    animal.frame(0);
+  }, 600);
 }
 
 function watch(){
