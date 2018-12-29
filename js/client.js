@@ -140,8 +140,12 @@ window.onload = function(){
   ////////////////
 
   var setBlink = setInterval(function(){
+    console.log("animals:");
+    console.log(animals);
+    console.log("rng:");
     for(var i = 0; i < animals; ++i){
       var rng = Math.floor(Math.random() * 3);
+      console.log(rng);
       if (!rng) {
         blink(animals[i]);
       }
