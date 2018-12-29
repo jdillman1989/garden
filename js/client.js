@@ -139,32 +139,25 @@ window.onload = function(){
   // Blink TEST //
   ////////////////
 
-  var setBlink = setInterval(function(){
+  var setIdle = setInterval(function(){
     for(var i = 0; i < animals.length; ++i){
       var rng = Math.floor(Math.random() * 4);
       if (!rng) {
-        blink(animals[i]);
+        animate(animals[i], 1, 150);
       }
       if (rng == 1) {
-        idle(animals[i]);
+        animate(animals[i], 2, 700);
       }
     }
   }, 1500);
 
 };
 
-function blink(animal){
-  animal.frame(1);
-  var thisBlink = setTimeout(function(){
+function animate(animal, frame, duration){
+  animal.frame(frame);
+  var thisAnim = setTimeout(function(){
     animal.frame(0);
-  }, 200);
-}
-
-function idle(animal){
-  animal.frame(2);
-  var thisBlink = setTimeout(function(){
-    animal.frame(0);
-  }, 600);
+  }, duration);
 }
 
 function watch(){
