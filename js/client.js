@@ -22,6 +22,15 @@ var tileSize = 0,
     uiH = 0,
     sprites = {};
 
+// WebFont.load({
+//   google: {
+//     families: ['Press Start 2P']
+//   },
+//   active: function() {
+//     displayText();
+//   }
+// });
+
 window.onload = function(){
 
   ///////////
@@ -30,6 +39,11 @@ window.onload = function(){
 
   loadSprites();
   $.ajaxSetup({ cache: false });
+
+  // var c = document.createElement('canvas');
+  // var ctx = c.getContext('2d');
+  // var W, H;
+  // document.body.appendChild(c);
 
   saveCanvas = document.getElementById('save');
   animCanvas = document.getElementById('animation');
@@ -179,6 +193,7 @@ function loadGame(){
       var name = data.character.name;
       var money = data.character.money;
       var inv = data.character.inv;
+      var pets = data.pets;
 
       if(data.globals.processing){
         watch();
@@ -186,6 +201,8 @@ function loadGame(){
 
       drawGame(map);
       drawUI(name, money, inv);
+      drawAnim(pets);
+
     }
     else{
       newGame();
@@ -232,7 +249,30 @@ function drawUI(name, money, inv){
 
   uiCTX.font = "12px Courier";
   uiCTX.fillStyle = "white";
-  uiCTX.fillText(name + "  $" + money, 0, (slotSize*uiH) + 20);
+  uiCTX.fillText(name + "  $" + money, 0, (slotSize*uiH) + 15);
+}
+
+function drawAnim(pets){
+  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
+
+  var startTiles = [
+    getTileCoordinates(52),
+    getTileCoordinates(53),
+    getTileCoordinates(51),
+    getTileCoordinates(54),
+    getTileCoordinates(26),
+    getTileCoordinates(29)
+  ];
+
+  var types = Object.keys(pets);
+  var quantities = Object.values(pets);
+
+  for (var i = 0; i < types.length; i++) {
+    for (var j = 0; j < quantities.length; j++) {
+      var thisSprite = animatedSprites(sprites[types[i] + ".png"], startTiles[j]['x'], startTiles[j]['y']);
+      thisSprite.frame(0);
+    }
+  }
 }
 
 function loadSprites(){
@@ -330,6 +370,28 @@ function changeSlot(slot){
       i++;
     }
   }
+}
+
+function animatedSprites(thisSprite, x, y){
+
+  var that = {};
+
+  that.frame = function (state) {
+    animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
+    animCTX.drawImage(
+      thisSprite,
+      tileSize * state,  // sprite x
+      0,                 // sprite y
+      tileSize,          // sprite width
+      tileSize,          // sprite height
+      x,                 // canvas x
+      y,                 // canvas y
+      tileSize,          // canvas draw width
+      tileSize           // canvas draw height
+    );
+  };
+  
+  return that;
 }
 
 

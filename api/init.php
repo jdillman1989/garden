@@ -108,6 +108,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
 // barn_1, barn_2, barn_3, barn_4, fence, etc
 
 $currentjson['map'] = $game_map;
+$currentjson['pets'] = ['creet' => 2];
 $currentjson['character']['inv'] = ["hoe" => 1, "sickle" => 1, "watering" => 1, "corn" => 10];
 $currentjson['globals']['init'] = true;
 

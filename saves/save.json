@@ -14,9 +14,7 @@
   "character": {
     "name": "Jadle",
     "money": 0,
-    "inv": {
-
-    }
+    "inv": {}
   },
-  "pets": []
+  "pets": {}
 }
