@@ -156,14 +156,14 @@ window.onload = function(){
       var rng = Math.floor(Math.random() * 4);
       if (!rng) {
         var adjObj = adjacentTiles(animals[i].tile);
-        var adj = Object.keys(adjObj.all);
+        var adj = Object.values(adjObj.all);
         var dest = adj[Math.floor(Math.random() * adj.length)];
         var coordsDest = getTileCoordinates(dest);
 
-        console.log(adjObj);
-        console.log(adj);
-        console.log(dest);
-        console.log(coordsDest);
+        // console.log(adjObj);
+        // console.log(adj);
+        // console.log(dest);
+        // console.log(coordsDest);
         
         animateMove(animals[i].id, [3,4], coordsDest);
       }
@@ -181,10 +181,10 @@ function animate(animal, frame, duration){
 }
 
 function animateMove(animal, frames, dest){
-  // console.log("dest: ");
-  // console.log(dest);
-  // console.log("animal: ");
-  // console.log(animals[animal]);
+  console.log("dest: ");
+  console.log(dest);
+  console.log("animal: ");
+  console.log(animals[animal]);
   if (animals[animal].x != dest.x || animals[animal].y != dest.y){
 
     if (animals[animal].x < dest.x) {
