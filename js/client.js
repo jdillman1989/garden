@@ -159,6 +159,12 @@ window.onload = function(){
         var adj = Object.keys(adjObj.all);
         var dest = adj[Math.floor(Math.random() * adj.length)];
         var coordsDest = getTileCoordinates(dest);
+
+        console.log(adjObj);
+        console.log(adj);
+        console.log(dest);
+        console.log(coordsDest);
+        
         animateMove(animals[i].id, [3,4], coordsDest);
       }
     }
