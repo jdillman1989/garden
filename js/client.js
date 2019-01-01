@@ -159,7 +159,7 @@ window.onload = function(){
         var adj = adjObj.all;
         var dest = adj[Math.floor(Math.random() * adj.length)];
         var coordsDest = getTileCoordinates(dest);
-        animateMove(animals[i].id, [3,4], dest);
+        animateMove(animals[i].id, [3,4], coordsDest);
       }
     }
   }, 5000);
