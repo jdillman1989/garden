@@ -175,10 +175,10 @@ function animate(animal, frame, duration){
 }
 
 function animateMove(animal, frames, dest){
-  // console.log("dest: ");
-  // console.log(dest);
-  // console.log("animal: ");
-  // console.log(animals[animal]);
+  console.log("dest: ");
+  console.log(dest);
+  console.log("animal: ");
+  console.log(animals[animal]);
   if (animals[animal].x != dest.x || animals[animal].y != dest.y){
 
     if (animals[animal].x < dest.x) {
