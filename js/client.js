@@ -136,28 +136,101 @@ window.onload = function(){
   }, 120000);
 
   ////////////////
-  // Blink TEST //
+  // Animations //
   ////////////////
 
   var setIdle = setInterval(function(){
     for(var i = 0; i < animals.length; ++i){
       var rng = Math.floor(Math.random() * 4);
       if (!rng) {
-        animate(animals[i], 1, 150);
+        animate(animals[i].id, 1, 150);
       }
       if (rng == 1) {
-        animate(animals[i], 2, 700);
+        animate(animals[i].id, 2, 700);
       }
     }
   }, 1500);
 
+  var setMove = setInterval(function(){
+    for(var i = 0; i < animals.length; ++i){
+      var rng = Math.floor(Math.random() * 4);
+      if (!rng) {
+        var adjObj = adjacentTiles(animals[i].tile);
+        var adj = adjObj.all;
+        var dest = adj[Math.floor(Math.random() * adj.length)];
+        var coordsDest = getTileCoordinates(dest);
+        animateMove(animals[i].id, [3,4], dest);
+      }
+    }
+  }, 5000);
 };
 
 function animate(animal, frame, duration){
-  animal.frame(frame);
+  animals[animal].frame = frame;
+  updateAnim();
   var thisAnim = setTimeout(function(){
-    animal.frame(0);
+    animals[animal].frame = 0;
+    updateAnim();
   }, duration);
+}
+
+function animateMove(animal, frames, dest){
+  if (animals[animal].x != dest.x || animals[animal].y != dest.y){
+
+    if (animals[animal].x < dest.x) {
+      animals[animal].x++;
+    }
+    else{
+      animals[animal].x--;
+    }
+
+    if (animals[animal].y < dest.y) {
+      animals[animal].y++;
+    }
+    else{
+      animals[animal].y--;
+    }
+    updateAnim();
+    window.requestAnimationFrame(function(){
+      animateMove(animal, frames, dest);
+    });
+  }
+  else{
+    animals[animal].tile = getCoordinatesTile(dest.x, dest.y);
+  }
+}
+
+function adjacentTiles(tile){
+
+  var obj = { "far":{}, "close":{}, "all":{} };
+
+  var adj = {
+    nw: (tile - (mapW + 1)),
+    ne: (tile - (mapW - 1)),
+    sw: (tile + (mapW - 1)),
+    se: (tile + (mapW + 1)),
+    n: (tile - mapW),
+    e: (tile - 1),
+    w: (tile + 1),
+    s: (tile + mapW)
+  };
+
+  var bounds = Object.values(adj);
+  var dir = Object.keys(adj);
+
+  for (var i = 0; i < bounds.length; i++) {
+    if (bounds[i] > -1 && bounds[i] <= (mapW * mapH)) {
+      if (dir[i].length > 1) {
+        obj["far"][dir[i]] = bounds[i];
+      }
+      else{
+        obj["close"][dir[i]] = bounds[i];
+      }
+      obj["all"][dir[i]] = bounds[i];
+    }
+  }
+
+  return obj;
 }
 
 function watch(){
@@ -227,6 +300,7 @@ function loadGame(){
       drawGame(map);
       drawUI(name, money, inv);
       drawAnim(pets);
+      updateAnim();
 
     }
     else{
@@ -278,7 +352,6 @@ function drawUI(name, money, inv){
 }
 
 function drawAnim(pets){
-  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
 
   var startTiles = [
     getTileCoordinates(52),
@@ -291,13 +364,40 @@ function drawAnim(pets){
 
   var types = Object.keys(pets);
   var quantities = Object.values(pets);
+  var k = 0;
 
   for (var i = 0; i < types.length; i++) {
     for (var j = 0; j < quantities[i]; j++) {
-      var thisSprite = animatedSprites(sprites[types[i] + ".png"], startTiles[j]['x'], startTiles[j]['y']);
-      animals.push(thisSprite);
-      thisSprite.frame(0);
+
+      var that = {};
+
+      that.x = startTiles[j]['x'];
+      that.y = startTiles[j]['y'];
+      that.tile = getCoordinatesTile(that.x, that.y);
+      that.id = k;
+      that.frame = 0;
+      that.sprite = sprites[types[i] + ".png"];
+
+      animals.push(that);
+      k++;
     }
+  }
+}
+
+function updateAnim(){
+  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
+  for(var i = 0; i < animals.length; ++i){
+    animCTX.drawImage(
+      animals[i].sprite,
+      animals[i].frame,  // sprite x
+      0,                 // sprite y
+      tileSize,          // sprite width
+      tileSize,          // sprite height
+      animals[i].x,      // canvas x
+      animals[i].y,      // canvas y
+      tileSize,          // canvas draw width
+      tileSize           // canvas draw height
+    );
   }
 }
 
@@ -365,6 +465,11 @@ function getTileCoordinates(tile){
   return {x:x, y:y};
 }
 
+function getCoordinatesTile(x, y){
+  var tile = ((Math.ceil(y / tileSize)) * mapW) + (Math.ceil(x / tileSize));
+  return tile;
+}
+
 function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
 
   var selectedTiles = [];
@@ -398,34 +503,7 @@ function changeSlot(slot){
   }
 }
 
-function animatedSprites(thisSprite, x, y){
-
-  var that = {};
-
-  that.frame = function (state) {
-    animCTX.clearRect(x, y, tileSize, tileSize);
-    animCTX.drawImage(
-      thisSprite,
-      tileSize * state,  // sprite x
-      0,                 // sprite y
-      tileSize,          // sprite width
-      tileSize,          // sprite height
-      x,                 // canvas x
-      y,                 // canvas y
-      tileSize,          // canvas draw width
-      tileSize           // canvas draw height
-    );
-  };
-  
-  return that;
-}
-
-
-
 // 0  1  2  3  4  5  6  7
 // 8  9  10 11 12 13 14 15
 // 16 17 18 19 20 21 22 23
 // 24 25 26 27 28 29 30 31
-
-
-
