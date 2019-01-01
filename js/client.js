@@ -156,13 +156,9 @@ window.onload = function(){
       var rng = Math.floor(Math.random() * 4);
       if (!rng) {
         var adjObj = adjacentTiles(animals[i].tile);
-        console.log(adjObj);
-        var adj = adjObj.all;
-        console.log(adj);
+        var adj = Object.keys(adjObj.all);
         var dest = adj[Math.floor(Math.random() * adj.length)];
-        console.log(dest);
         var coordsDest = getTileCoordinates(dest);
-        console.log(coordsDest);
         animateMove(animals[i].id, [3,4], coordsDest);
       }
     }
