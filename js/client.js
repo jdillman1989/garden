@@ -164,7 +164,7 @@ window.onload = function(){
         // console.log(adj);
         // console.log(dest);
         // console.log(coordsDest);
-        
+
         animateMove(animals[i].id, [3,4], coordsDest);
       }
     }
@@ -190,14 +190,14 @@ function animateMove(animal, frames, dest){
     if (animals[animal].x < dest.x) {
       animals[animal].x++;
     }
-    else{
+    else if (animals[animal].x > dest.x){
       animals[animal].x--;
     }
 
     if (animals[animal].y < dest.y) {
       animals[animal].y++;
     }
-    else{
+    else if (animals[animal].y > dest.y){
       animals[animal].y--;
     }
     updateAnim();
