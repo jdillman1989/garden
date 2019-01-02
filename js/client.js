@@ -143,66 +143,78 @@ window.onload = function(){
     for(var i = 0; i < animals.length; ++i){
       var rng = Math.floor(Math.random() * 4);
       if (!rng) {
-        animate(animals[i].id, 1, 150);
+        animate(animals[i].id, [1], 150);
       }
       if (rng == 1) {
-        animate(animals[i].id, 2, 700);
+        animate(animals[i].id, [2], 700);
       }
     }
   }, 1500);
 
   var setMove = setInterval(function(){
-    for(var i = 0; i < animals.length; ++i){
-      var rng = Math.floor(Math.random() * 4);
-      if (!rng) {
-        var adjObj = adjacentTiles(animals[i].tile);
-        var adj = Object.values(adjObj.all);
-        var dest = adj[Math.floor(Math.random() * adj.length)];
-        var coordsDest = getTileCoordinates(dest);
 
-        // console.log(adjObj);
-        // console.log(adj);
-        // console.log(dest);
-        // console.log(coordsDest);
+    $.getJSON('saves/save.json', function(data){
 
-        animateMove(animals[i].id, [3,4], coordsDest);
+      for(var i = 0; i < animals.length; ++i){
+        var rng = Math.floor(Math.random() * 4);
+        if (!rng) {
+          var adjObj = adjacentTiles(animals[i].tile);
+          var adj = Object.values(adjObj.all);
+          var rand = Math.floor(Math.random() * adj.length);
+          var dest = adj[rand];
+
+          if(data.map[dest].state.type == "ground"){
+            var coordsDest = getTileCoordinates(dest);
+
+            animateMove(animals[i].id, coordsDest);
+            animate(animals[i].id, [3,4], 600);
+          }
+        }
       }
-    }
+    });
   }, 5000);
 };
 
-function animate(animal, frame, duration){
-  animals[animal].frame = frame;
+function animate(animal, frames, duration){
+
+  var currentFrame = 0;
+  animals[animal].frame = frames[currentFrame];
   updateAnim();
-  var thisAnim = setTimeout(function(){
-    animals[animal].frame = 0;
-    updateAnim();
-  }, duration);
+
+  var thisAnim = setInterval(function(){
+    currentFrame++;
+    if(currentFrame >= frames.length){
+      clearInterval(thisAnim);
+      animals[animal].frame = 0;
+      updateAnim();
+    }
+    else{
+      animals[animal].frame = frames[currentFrame];
+      updateAnim();
+    }
+  }, duration / frames.length);
 }
 
-function animateMove(animal, frames, dest){
-  console.log("dest: ");
-  console.log(dest);
-  console.log("animal: ");
-  console.log(animals[animal]);
+function animateMove(animal, dest){
+  var speed = 0.5;
   if (animals[animal].x != dest.x || animals[animal].y != dest.y){
 
     if (animals[animal].x < dest.x) {
-      animals[animal].x++;
+      animals[animal].x = animals[animal].x + speed;
     }
     else if (animals[animal].x > dest.x){
-      animals[animal].x--;
+      animals[animal].x = animals[animal].x - speed;
     }
 
     if (animals[animal].y < dest.y) {
-      animals[animal].y++;
+      animals[animal].y = animals[animal].y + speed;
     }
     else if (animals[animal].y > dest.y){
-      animals[animal].y--;
+      animals[animal].y = animals[animal].y - speed;
     }
     updateAnim();
     window.requestAnimationFrame(function(){
-      animateMove(animal, frames, dest);
+      animateMove(animal, dest);
     });
   }
   else{
@@ -399,7 +411,7 @@ function updateAnim(){
   for(var i = 0; i < animals.length; ++i){
     animCTX.drawImage(
       animals[i].sprite,
-      animals[i].frame,  // sprite x
+      animals[i].frame * tileSize,  // sprite x
       0,                 // sprite y
       tileSize,          // sprite width
       tileSize,          // sprite height
