@@ -2,9 +2,6 @@
 
 ## shortterm
 
-
-Fix movement rng
-
 Crop loop animations
 
 Game timer (grow crops, dry tiles)

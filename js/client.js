@@ -175,10 +175,9 @@ function randomAdjacentTile(tileSet, mapData, type){
   var result = {};
   var rand = Math.floor(Math.random() * tileSet.length);
   var dest = tileSet[rand];
+  var occupied = occupiedTiles();
 
-  console.log(tileSet);
-
-  if(mapData[dest].state.type == type){
+  if(mapData[dest].state.type == type && !occupied.includes(dest)){
     result.coords = getTileCoordinates(dest);
     result.tile = dest;
     return result;
@@ -192,6 +191,14 @@ function randomAdjacentTile(tileSet, mapData, type){
       return false;
     }
   }
+}
+
+function occupiedTiles(){
+  var result = [];
+  for(var i = 0; i < animals.length; ++i){
+    result.push(animals[i].tile);
+  }
+  return result;
 }
 
 function animate(animal, frames, duration){
