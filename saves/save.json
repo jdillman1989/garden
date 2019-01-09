@@ -1,20 +1,7540 @@
 {
-  "globals": {
-    "init": false,
-    "mapW": 25,
-    "mapH": 25,
-    "tileSize": 16,
-    "slotSize": 32,
-    "uiW": 12,
-    "uiH": 2,
-    "cache": 0,
-    "processing": false
-  },
-  "map": [],
-  "character": {
-    "name": "Jadle",
-    "money": 0,
-    "inv": {}
-  },
-  "pets": {}
+    "globals": {
+        "init": true,
+        "mapW": 25,
+        "mapH": 25,
+        "tileSize": 16,
+        "slotSize": 32,
+        "uiW": 12,
+        "uiH": 2,
+        "cache": 1547068234,
+        "processing": false
+    },
+    "map": [
+        {
+            "id": 0,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 1,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 2,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "house1.png"
+            }
+        },
+        {
+            "id": 3,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "house2.png"
+            }
+        },
+        {
+            "id": 4,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 5,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 6,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 7,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 8,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 9,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 10,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 11,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 12,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 13,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 14,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 15,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 16,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 17,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 18,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 19,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 20,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 21,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 22,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 23,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 24,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 25,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 26,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 27,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "house3.png"
+            }
+        },
+        {
+            "id": 28,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "house4.png"
+            }
+        },
+        {
+            "id": 29,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 30,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 31,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 32,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 33,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 34,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 35,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 36,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 37,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 38,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 39,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 40,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 41,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 42,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 43,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 44,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 45,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 46,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 47,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 48,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 49,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 50,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 51,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 52,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 53,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 54,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 55,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 56,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 57,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 58,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 59,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 60,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 61,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 62,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 63,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 64,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 65,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 66,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 67,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 68,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 69,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 70,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 71,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 72,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 73,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 74,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 75,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 76,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 77,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 78,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 79,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 80,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 81,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 82,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 83,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 84,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 85,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 86,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 87,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 88,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 89,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 90,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 91,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 92,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 93,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 94,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 95,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 96,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 97,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 98,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 99,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 100,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 101,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 102,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 103,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 104,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 105,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 106,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 107,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 108,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 109,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 110,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 111,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 112,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 113,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 114,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 115,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 116,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 117,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 118,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 119,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 120,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 121,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 122,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 123,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 124,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 125,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 126,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 127,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 128,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 129,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 130,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 131,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 132,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 133,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 134,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 135,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 136,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 137,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 138,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 139,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 140,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 141,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 142,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 143,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 144,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 145,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 146,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 147,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 148,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 149,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 150,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 151,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 152,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 153,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 154,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 155,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 156,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 157,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 158,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 159,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 160,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 161,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 162,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 163,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 164,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 165,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 166,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 167,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 168,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 169,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 170,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 171,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 172,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 173,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 174,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 175,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 176,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 177,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 178,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 179,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 180,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 181,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 182,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 183,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 184,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 185,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 186,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 187,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 188,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 189,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 190,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 191,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 192,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 193,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 194,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 195,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 196,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 197,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 198,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 199,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 200,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 201,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 202,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 203,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 204,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 205,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 206,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 207,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 208,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 209,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 210,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 211,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 212,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 213,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 214,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 215,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 216,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 217,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 218,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 219,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 220,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 221,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 222,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 223,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 224,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 225,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 226,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 227,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 228,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 229,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 230,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 231,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 232,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 233,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 234,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 235,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 236,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 237,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 238,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 239,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 240,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 241,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 242,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 243,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 244,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 245,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 246,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 247,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 248,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 249,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 250,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 251,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 252,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 253,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 254,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 255,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 256,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 257,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 258,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 259,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 260,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 261,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 262,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 263,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 264,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 265,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 266,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 267,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 268,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 269,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 270,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 271,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 272,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 273,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 274,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 275,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 276,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 277,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 278,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 279,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 280,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 281,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 282,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 283,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 284,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 285,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 286,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 287,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 288,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 289,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 290,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 291,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 292,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 293,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 294,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 295,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 296,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 297,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 298,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 299,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 300,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 301,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 302,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 303,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 304,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 305,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 306,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 307,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 308,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 309,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 310,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 311,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 312,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 313,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 314,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 315,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 316,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 317,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 318,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 319,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 320,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 321,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 322,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 323,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 324,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 325,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 326,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 327,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 328,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 329,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 330,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 331,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 332,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 333,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 334,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 335,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 336,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 337,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 338,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 339,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 340,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 341,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 342,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 343,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 344,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 345,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 346,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 347,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 348,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 349,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 350,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 351,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 352,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 353,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 354,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 355,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 356,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 357,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 358,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 359,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 360,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 361,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 362,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 363,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 364,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 365,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 366,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 367,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 368,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 369,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 370,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 371,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 372,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 373,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 374,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 375,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 376,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 377,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 378,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 379,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 380,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 381,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 382,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 383,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 384,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 385,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 386,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 387,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 388,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 389,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 390,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 391,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 392,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 393,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 394,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 395,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 396,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 397,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 398,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 399,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 400,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 401,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 402,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 403,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 404,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 405,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 406,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 407,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 408,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 409,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 410,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 411,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 412,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 413,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 414,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 415,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 416,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 417,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 418,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 419,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 420,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 421,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 422,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 423,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 424,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 425,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 426,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 427,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 428,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 429,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 430,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 431,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 432,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 433,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 434,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 435,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 436,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 437,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 438,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 439,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 440,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 441,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 442,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 443,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 444,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 445,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 446,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 447,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 448,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 449,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 450,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 451,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 452,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 453,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 454,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 455,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 456,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 457,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 458,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 459,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 460,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 461,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 462,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 463,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 464,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 465,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 466,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 467,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 468,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 469,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 470,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 471,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 472,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 473,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 474,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 475,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 476,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 477,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 478,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 479,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 480,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 481,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 482,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 483,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 484,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 485,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 486,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 487,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 488,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 489,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 490,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 491,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 492,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 493,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 494,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 495,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 496,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 497,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 498,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 499,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 500,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 501,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 502,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 503,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 504,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 505,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 506,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 507,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 508,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 509,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 510,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 511,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 512,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 513,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 514,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 515,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 516,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 517,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 518,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 519,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 520,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 521,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 522,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 523,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 524,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 525,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 526,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 527,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 528,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 529,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 530,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 531,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 532,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 533,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 534,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 535,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 536,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 537,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 538,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 539,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 540,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 541,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 542,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 543,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 544,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 545,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 546,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 547,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 548,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 549,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 550,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 551,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 552,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 553,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 554,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 555,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 556,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 557,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 558,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 559,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 560,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 561,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 562,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 563,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 564,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 565,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 566,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 567,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 568,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 569,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 570,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 571,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 572,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 573,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 574,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 575,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 576,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 577,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 578,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 579,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 580,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 581,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 582,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 583,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 584,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 585,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 586,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 587,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 588,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 589,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 590,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 591,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 592,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 593,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1.png"
+            }
+        },
+        {
+            "id": 594,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 595,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 596,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 597,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": false
+            }
+        },
+        {
+            "id": 598,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass2.png"
+            }
+        },
+        {
+            "id": 599,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 600,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 601,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 602,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 603,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 604,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 605,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 606,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 607,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 608,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 609,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 610,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 611,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 612,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 613,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 614,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 615,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 616,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 617,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 618,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 619,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 620,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 621,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 622,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 623,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 624,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        },
+        {
+            "id": 625,
+            "state": {
+                "type": "building",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "fence.png"
+            }
+        }
+    ],
+    "character": {
+        "name": "Jadle",
+        "money": 0,
+        "inv": {
+            "hoe": 1,
+            "sickle": 1,
+            "watering": 1,
+            "corn": 10
+        }
+    },
+    "pets": {
+        "creet": 5
+    }
 }

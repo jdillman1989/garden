@@ -156,24 +156,43 @@ window.onload = function(){
     $.getJSON('saves/save.json', function(data){
 
       for(var i = 0; i < animals.length; ++i){
-        var rng = Math.floor(Math.random() * 4);
+        var rng = Math.floor(Math.random() * 5);
         if (!rng) {
           var adjObj = adjacentTiles(animals[i].tile);
           var adj = Object.values(adjObj.all);
-          var rand = Math.floor(Math.random() * adj.length);
-          var dest = adj[rand];
-
-          if(data.map[dest].state.type == "ground"){
-            var coordsDest = getTileCoordinates(dest);
-
-            animateMove(animals[i].id, coordsDest);
+          var dest = randomAdjacentTile(adj, data.map, "ground");
+          if (dest) {
+            animateMove(animals[i].id, dest.coords);
             animate(animals[i].id, [3,4], 600);
           }
         }
       }
     });
-  }, 5000);
+  }, 4000);
 };
+
+function randomAdjacentTile(tileSet, mapData, type){
+  var result = {};
+  var rand = Math.floor(Math.random() * tileSet.length);
+  var dest = tileSet[rand];
+
+  console.log(tileSet);
+
+  if(mapData[dest].state.type == type){
+    result.coords = getTileCoordinates(dest);
+    result.tile = dest;
+    return result;
+  }
+  else{
+    tileSet.splice(rand, 1);
+    if (tileSet.length) {
+      randomAdjacentTile(tileSet, mapData, type);
+    }
+    else{
+      return false;
+    }
+  }
+}
 
 function animate(animal, frames, duration){
 
