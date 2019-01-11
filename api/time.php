@@ -56,6 +56,9 @@ if ($last) {
       if ($current_stage < 5) {
         $currentjson['map'][$tile]['render']['sprite'] = $plant[0].'-'.$current_stage.'.png';
       }
+      if ($current_stage) {
+        $currentjson['map'][$tile]['render']['animate'] = true;
+      }
     }
   }
 }

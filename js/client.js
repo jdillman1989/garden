@@ -20,8 +20,11 @@ var tileSize = 0,
     slotSize = 0,
     uiW = 0,
     uiH = 0,
-    sprites = {},
-    animals = [];
+    sprites = {};
+
+// Animation States
+var animals = [],
+    plants = [];
 
 // WebFont.load({
 //   google: {
@@ -143,13 +146,19 @@ window.onload = function(){
     for(var i = 0; i < animals.length; ++i){
       var rng = Math.floor(Math.random() * 4);
       if (!rng) {
-        animate(animals[i].id, [1], 150);
+        animate(animals, animals[i].id, [1], 150);
       }
       if (rng == 1) {
-        animate(animals[i].id, [2], 700);
+        animate(animals, animals[i].id, [2], 700);
       }
     }
   }, 1500);
+
+  var setLooped = setInterval(function(){
+    for(var i = 0; i < plants.length; ++i){
+      animate(plants, plants[i].id, [1], 700);
+    }
+  }, 2000);
 
   var setMove = setInterval(function(){
 
@@ -163,7 +172,7 @@ window.onload = function(){
           var dest = randomAdjacentTile(adj, data.map, "ground");
           if (dest) {
             animateMove(animals[i].id, dest.coords);
-            animate(animals[i].id, [3,4], 600);
+            animate(animals, animals[i].id, [3,4], 600);
           }
         }
       }
@@ -201,21 +210,21 @@ function occupiedTiles(){
   return result;
 }
 
-function animate(animal, frames, duration){
+function animate(obj, animated, frames, duration){
 
   var currentFrame = 0;
-  animals[animal].frame = frames[currentFrame];
+  obj[animated].frame = frames[currentFrame];
   updateAnim();
 
   var thisAnim = setInterval(function(){
     currentFrame++;
     if(currentFrame >= frames.length){
       clearInterval(thisAnim);
-      animals[animal].frame = 0;
+      obj[animated].frame = 0;
       updateAnim();
     }
     else{
-      animals[animal].frame = frames[currentFrame];
+      obj[animated].frame = frames[currentFrame];
       updateAnim();
     }
   }, duration / frames.length);
@@ -359,6 +368,7 @@ function loadGame(){
 
 function drawGame(map){
   saveCTX.clearRect(0, 0, saveCanvas.width, saveCanvas.height);
+  var k = 0;
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
       var currentPos = ((y*mapW)+x);
@@ -367,7 +377,33 @@ function drawGame(map){
 
       var thisSprite = map[currentPos].render.sprite;
       if(thisSprite){
-        saveCTX.drawImage(sprites[thisSprite], x*tileSize, y*tileSize, tileSize, tileSize);
+        if (map[currentPos].render.animate) {
+
+          var that = {};
+
+          that.x = x*tileSize;
+          that.y = y*tileSize;
+          that.tile = getCoordinatesTile(that.x, that.y);
+          that.id = k;
+          that.frame = 0;
+          that.sprite = sprites[thisSprite];
+
+          plants.push(that);
+          k++;
+        }
+        else{
+          saveCTX.drawImage(
+            sprites[thisSprite],
+            0,               // sprite x
+            0,               // sprite y
+            tileSize,        // sprite width
+            tileSize,        // sprite height
+            x*tileSize,      // canvas x
+            y*tileSize,      // canvas y
+            tileSize,        // canvas draw width
+            tileSize         // canvas draw height
+          );
+        }
       }
     }
   }
@@ -443,6 +479,19 @@ function updateAnim(){
       tileSize,          // sprite height
       animals[i].x,      // canvas x
       animals[i].y,      // canvas y
+      tileSize,          // canvas draw width
+      tileSize           // canvas draw height
+    );
+  }
+  for(var i = 0; i < plants.length; ++i){
+    animCTX.drawImage(
+      plants[i].sprite,
+      plants[i].frame * tileSize,  // sprite x
+      0,                 // sprite y
+      tileSize,          // sprite width
+      tileSize,          // sprite height
+      plants[i].x,      // canvas x
+      plants[i].y,      // canvas y
       tileSize,          // canvas draw width
       tileSize           // canvas draw height
     );

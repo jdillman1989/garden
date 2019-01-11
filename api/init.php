@@ -96,6 +96,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
       // "base" => $colors[$color],
       "base" => '#4BA42F',
       "sprite" => $sprite,
+      "animate" => false,
     ],
   ];
 }
