@@ -34,7 +34,112 @@ var animals = [],
 //     displayText();
 //   }
 // });
+function animate(obj, animated, frames, duration){
 
+  var currentFrame = 0;
+  obj[animated].frame = frames[currentFrame];
+  updateAnim();
+
+  var thisAnim = setInterval(function(){
+    currentFrame++;
+    if(currentFrame >= frames.length){
+      clearInterval(thisAnim);
+      obj[animated].frame = 0;
+      updateAnim();
+    }
+    else{
+      obj[animated].frame = frames[currentFrame];
+      updateAnim();
+    }
+  }, duration / frames.length);
+}
+
+function animateMove(animal, dest){
+  var speed = 0.5;
+  if (animals[animal].x != dest.x || animals[animal].y != dest.y){
+
+    if (animals[animal].x < dest.x) {
+      animals[animal].x = animals[animal].x + speed;
+    }
+    else if (animals[animal].x > dest.x){
+      animals[animal].x = animals[animal].x - speed;
+    }
+
+    if (animals[animal].y < dest.y) {
+      animals[animal].y = animals[animal].y + speed;
+    }
+    else if (animals[animal].y > dest.y){
+      animals[animal].y = animals[animal].y - speed;
+    }
+    updateAnim();
+    window.requestAnimationFrame(function(){
+      animateMove(animal, dest);
+    });
+  }
+  else{
+    animals[animal].tile = getCoordinatesTile(dest.x, dest.y);
+  }
+}
+
+function updateAnim(){
+  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
+  for(var i = 0; i < animals.length; ++i){
+    animCTX.drawImage(
+      animals[i].sprite,
+      animals[i].frame * tileSize,  // sprite x
+      0,                 // sprite y
+      tileSize,          // sprite width
+      tileSize,          // sprite height
+      animals[i].x,      // canvas x
+      animals[i].y,      // canvas y
+      tileSize,          // canvas draw width
+      tileSize           // canvas draw height
+    );
+  }
+  for(var i = 0; i < plants.length; ++i){
+    animCTX.drawImage(
+      plants[i].sprite,
+      plants[i].frame * tileSize,  // sprite x
+      0,                 // sprite y
+      tileSize,          // sprite width
+      tileSize,          // sprite height
+      plants[i].x,      // canvas x
+      plants[i].y,      // canvas y
+      tileSize,          // canvas draw width
+      tileSize           // canvas draw height
+    );
+  }
+}
+
+function randomAdjacentTile(tileSet, mapData, type){
+  var result = {};
+  var rand = Math.floor(Math.random() * tileSet.length);
+  var dest = tileSet[rand];
+  var occupied = occupiedTiles();
+
+  if(mapData[dest].state.type == type && !occupied.includes(dest)){
+    result.coords = getTileCoordinates(dest);
+    result.tile = dest;
+    return result;
+  }
+  else{
+    tileSet.splice(rand, 1);
+    if (tileSet.length) {
+      randomAdjacentTile(tileSet, mapData, type);
+    }
+    else{
+      return false;
+    }
+  }
+}
+
+function occupiedTiles(){
+  var result = [];
+  for(var i = 0; i < animals.length; ++i){
+    result.push(animals[i].tile);
+  }
+  return result;
+}
 window.onload = function(){
 
   ///////////
@@ -179,145 +284,6 @@ window.onload = function(){
     });
   }, 4000);
 };
-
-function randomAdjacentTile(tileSet, mapData, type){
-  var result = {};
-  var rand = Math.floor(Math.random() * tileSet.length);
-  var dest = tileSet[rand];
-  var occupied = occupiedTiles();
-
-  if(mapData[dest].state.type == type && !occupied.includes(dest)){
-    result.coords = getTileCoordinates(dest);
-    result.tile = dest;
-    return result;
-  }
-  else{
-    tileSet.splice(rand, 1);
-    if (tileSet.length) {
-      randomAdjacentTile(tileSet, mapData, type);
-    }
-    else{
-      return false;
-    }
-  }
-}
-
-function occupiedTiles(){
-  var result = [];
-  for(var i = 0; i < animals.length; ++i){
-    result.push(animals[i].tile);
-  }
-  return result;
-}
-
-function animate(obj, animated, frames, duration){
-
-  var currentFrame = 0;
-  obj[animated].frame = frames[currentFrame];
-  updateAnim();
-
-  var thisAnim = setInterval(function(){
-    currentFrame++;
-    if(currentFrame >= frames.length){
-      clearInterval(thisAnim);
-      obj[animated].frame = 0;
-      updateAnim();
-    }
-    else{
-      obj[animated].frame = frames[currentFrame];
-      updateAnim();
-    }
-  }, duration / frames.length);
-}
-
-function animateMove(animal, dest){
-  var speed = 0.5;
-  if (animals[animal].x != dest.x || animals[animal].y != dest.y){
-
-    if (animals[animal].x < dest.x) {
-      animals[animal].x = animals[animal].x + speed;
-    }
-    else if (animals[animal].x > dest.x){
-      animals[animal].x = animals[animal].x - speed;
-    }
-
-    if (animals[animal].y < dest.y) {
-      animals[animal].y = animals[animal].y + speed;
-    }
-    else if (animals[animal].y > dest.y){
-      animals[animal].y = animals[animal].y - speed;
-    }
-    updateAnim();
-    window.requestAnimationFrame(function(){
-      animateMove(animal, dest);
-    });
-  }
-  else{
-    animals[animal].tile = getCoordinatesTile(dest.x, dest.y);
-  }
-}
-
-function adjacentTiles(tile){
-
-  var obj = { "far":{}, "close":{}, "all":{} };
-
-  var adj = {
-    nw: (tile - (mapW + 1)),
-    ne: (tile - (mapW - 1)),
-    sw: (tile + (mapW - 1)),
-    se: (tile + (mapW + 1)),
-    n: (tile - mapW),
-    e: (tile - 1),
-    w: (tile + 1),
-    s: (tile + mapW)
-  };
-
-  var bounds = Object.values(adj);
-  var dir = Object.keys(adj);
-
-  for (var i = 0; i < bounds.length; i++) {
-    if (bounds[i] > -1 && bounds[i] <= (mapW * mapH)) {
-      if (dir[i].length > 1) {
-        obj["far"][dir[i]] = bounds[i];
-      }
-      else{
-        obj["close"][dir[i]] = bounds[i];
-      }
-      obj["all"][dir[i]] = bounds[i];
-    }
-  }
-
-  return obj;
-}
-
-function watch(){
-  var watch = setInterval(function(){
-    $.getJSON('saves/save.json', function(data){
-      drawGame(data.map);
-      drawUI(data.character.name, data.character.money, data.character.inv);
-      if(!data.globals.processing){
-        clearInterval(watch);
-      }
-    });
-  }, 1500);
-}
-
-function look(){
-  if (!processing) {
-    $.getJSON('saves/save.json', function(data){
-      drawGame(data.map);
-      drawUI(data.character.name, data.character.money, data.character.inv);
-    });
-  }
-}
-
-function updateTime(){
-  $.ajax({
-    type: "GET",
-    url: 'api/time.php'
-  });
-}
-
 function newGame(){
   $.ajax({
     type: "GET",
@@ -368,6 +334,7 @@ function loadGame(){
 
 function drawGame(map){
   saveCTX.clearRect(0, 0, saveCanvas.width, saveCanvas.height);
+  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
   var k = 0;
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
@@ -468,36 +435,6 @@ function drawAnim(pets){
   }
 }
 
-function updateAnim(){
-  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
-  for(var i = 0; i < animals.length; ++i){
-    animCTX.drawImage(
-      animals[i].sprite,
-      animals[i].frame * tileSize,  // sprite x
-      0,                 // sprite y
-      tileSize,          // sprite width
-      tileSize,          // sprite height
-      animals[i].x,      // canvas x
-      animals[i].y,      // canvas y
-      tileSize,          // canvas draw width
-      tileSize           // canvas draw height
-    );
-  }
-  for(var i = 0; i < plants.length; ++i){
-    animCTX.drawImage(
-      plants[i].sprite,
-      plants[i].frame * tileSize,  // sprite x
-      0,                 // sprite y
-      tileSize,          // sprite width
-      tileSize,          // sprite height
-      plants[i].x,      // canvas x
-      plants[i].y,      // canvas y
-      tileSize,          // canvas draw width
-      tileSize           // canvas draw height
-    );
-  }
-}
-
 function loadSprites(){
   $.ajax({
     type: "GET",
@@ -514,6 +451,33 @@ function loadSprites(){
   });
 }
 
+function watch(){
+  var watch = setInterval(function(){
+    $.getJSON('saves/save.json', function(data){
+      drawGame(data.map);
+      drawUI(data.character.name, data.character.money, data.character.inv);
+      if(!data.globals.processing){
+        clearInterval(watch);
+      }
+    });
+  }, 1500);
+}
+
+function look(){
+  if (!processing) {
+    $.getJSON('saves/save.json', function(data){
+      drawGame(data.map);
+      drawUI(data.character.name, data.character.money, data.character.inv);
+    });
+  }
+}
+
+function updateTime(){
+  $.ajax({
+    type: "GET",
+    url: 'api/time.php'
+  });
+}
 function getCursorTile(e, ui) {
 
   if(ui){
@@ -534,6 +498,22 @@ function getCursorTile(e, ui) {
   return tile;
 }
 
+function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
+
+  var selectedTiles = [];
+
+  for(var y = startyIndex; y <= endyIndex; ++y){
+    for(var x = startxIndex; x <= endxIndex; ++x){
+      var currentPos = ((y*mapW)+x);
+      selectedTiles.push(currentPos);
+    }
+  }
+
+  currentSelection = selectedTiles;
+
+  highlightTiles(selectedTiles);
+}
+
 function highlightTile(tile) {
   interactCTX.clearRect(0, 0, interactCanvas.width, interactCanvas.height);
 
@@ -552,37 +532,6 @@ function highlightTiles(tiles) {
   }
 }
 
-function getTileCoordinates(tile){
-
-  var yIndex = Math.floor(tile / mapW);
-  var xIndex = tile - (yIndex * mapW);
-
-  var y = yIndex * tileSize;
-  var x = xIndex * tileSize;
-  return {x:x, y:y};
-}
-
-function getCoordinatesTile(x, y){
-  var tile = ((Math.ceil(y / tileSize)) * mapW) + (Math.ceil(x / tileSize));
-  return tile;
-}
-
-function selectTiles(startyIndex, startxIndex, endyIndex, endxIndex) {
-
-  var selectedTiles = [];
-
-  for(var y = startyIndex; y <= endyIndex; ++y){
-    for(var x = startxIndex; x <= endxIndex; ++x){
-      var currentPos = ((y*mapW)+x);
-      selectedTiles.push(currentPos);
-    }
-  }
-
-  currentSelection = selectedTiles;
-
-  highlightTiles(selectedTiles);
-}
-
 function changeSlot(slot){
   currentSlot = slot;
   // uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
@@ -599,8 +548,50 @@ function changeSlot(slot){
     }
   }
 }
+function getTileCoordinates(tile){
 
-// 0  1  2  3  4  5  6  7
-// 8  9  10 11 12 13 14 15
-// 16 17 18 19 20 21 22 23
-// 24 25 26 27 28 29 30 31
+  var yIndex = Math.floor(tile / mapW);
+  var xIndex = tile - (yIndex * mapW);
+
+  var y = yIndex * tileSize;
+  var x = xIndex * tileSize;
+  return {x:x, y:y};
+}
+
+function getCoordinatesTile(x, y){
+  var tile = ((Math.ceil(y / tileSize)) * mapW) + (Math.ceil(x / tileSize));
+  return tile;
+}
+
+function adjacentTiles(tile){
+
+  var obj = { "far":{}, "close":{}, "all":{} };
+
+  var adj = {
+    nw: (tile - (mapW + 1)),
+    ne: (tile - (mapW - 1)),
+    sw: (tile + (mapW - 1)),
+    se: (tile + (mapW + 1)),
+    n: (tile - mapW),
+    e: (tile - 1),
+    w: (tile + 1),
+    s: (tile + mapW)
+  };
+
+  var bounds = Object.values(adj);
+  var dir = Object.keys(adj);
+
+  for (var i = 0; i < bounds.length; i++) {
+    if (bounds[i] > -1 && bounds[i] <= (mapW * mapH)) {
+      if (dir[i].length > 1) {
+        obj["far"][dir[i]] = bounds[i];
+      }
+      else{
+        obj["close"][dir[i]] = bounds[i];
+      }
+      obj["all"][dir[i]] = bounds[i];
+    }
+  }
+
+  return obj;
+}

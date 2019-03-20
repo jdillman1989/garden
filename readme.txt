@@ -2,7 +2,9 @@
 
 ## shortterm
 
-Crop loop animations
+Organize JS
+
+Fix redraw issue
 
 Game timer (grow crops, dry tiles)
 
