@@ -2,7 +2,6 @@
 
 ## shortterm
 
-Organize JS
 
 Fix redraw issue
 

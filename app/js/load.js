@@ -57,35 +57,91 @@ function drawGame(map){
       saveCTX.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
 
       var thisSprite = map[currentPos].render.sprite;
+
+
+
+
+
+
+
       if(thisSprite){
-        if (map[currentPos].render.animate) {
 
-          var that = {};
 
-          that.x = x*tileSize;
-          that.y = y*tileSize;
-          that.tile = getCoordinatesTile(that.x, that.y);
-          that.id = k;
-          that.frame = 0;
-          that.sprite = sprites[thisSprite];
 
-          plants.push(that);
-          k++;
+
+
+
+
+
+        if(thisSprite == "grass1.png"){
+          drawSprite(saveCTX, x*tileSize, y*tileSize, grass1);
         }
         else{
-          saveCTX.drawImage(
-            sprites[thisSprite],
-            0,               // sprite x
-            0,               // sprite y
-            tileSize,        // sprite width
-            tileSize,        // sprite height
-            x*tileSize,      // canvas x
-            y*tileSize,      // canvas y
-            tileSize,        // canvas draw width
-            tileSize         // canvas draw height
-          );
+
+
+
+
+
+
+          if (map[currentPos].render.animate) {
+
+            var that = {};
+
+            that.x = x*tileSize;
+            that.y = y*tileSize;
+            that.tile = getCoordinatesTile(that.x, that.y);
+            that.id = k;
+            that.frame = 0;
+            that.sprite = sprites[thisSprite];
+
+            plants.push(that);
+            k++;
+          }
+          else{
+            saveCTX.drawImage(
+              sprites[thisSprite],
+              0,               // sprite x
+              0,               // sprite y
+              tileSize,        // sprite width
+              tileSize,        // sprite height
+              x*tileSize,      // canvas x
+              y*tileSize,      // canvas y
+              tileSize,        // canvas draw width
+              tileSize         // canvas draw height
+            );
+          }
+
+
+
+
         }
+
+
+
+
+
+
       }
+
+
+
+
+    }
+  }
+}
+
+function drawSprite(thisCTX, posX, posY, thisSprite){
+  // thisCTX.clearRect(posX, posY, tileSize, tileSize);
+  var k = 0;
+  
+  for(var y = posY; y < posY + tileSize; ++y){
+    for(var x = posX; x < posX + tileSize; ++x){
+
+      if(thisSprite[0][k]){
+        thisCTX.fillStyle = thisSprite[0][k];
+        thisCTX.fillRect(x, y, 1, 1);
+      }
+      k++;
     }
   }
 }
