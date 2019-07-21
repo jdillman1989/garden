@@ -4,7 +4,6 @@ window.onload = function(){
   // Setup //
   ///////////
 
-  loadSprites();
   $.ajaxSetup({ cache: false });
 
   // var c = document.createElement('canvas');

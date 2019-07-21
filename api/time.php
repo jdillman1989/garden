@@ -54,7 +54,7 @@ if ($last) {
 
       $current_stage = floor($grow / $crops[$plant[0]]);
       if ($current_stage < 5) {
-        $currentjson['map'][$tile]['render']['sprite'] = $plant[0].'-'.$current_stage.'.png';
+        $currentjson['map'][$tile]['render']['sprite'] = $plant[0].'_'.$current_stage;
       }
       if ($current_stage) {
         $currentjson['map'][$tile]['render']['animate'] = true;

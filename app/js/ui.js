@@ -59,11 +59,11 @@ function changeSlot(slot){
   var i = 0;
   for(var y = 0; y < uiH; ++y){
     for(var x = 0; x < uiW; ++x){
-      var slotSprite = sprites["slot.png"];
+      var slotSprite = slot[0];
       if(i == slot){
-        slotSprite = sprites["slot-sel.png"];
+        slotSprite = slot_sel[0];
       }
-      uiCTX.drawImage(slotSprite, x*slotSize, y*slotSize, slotSize, slotSize);
+      drawSprite(uiCTX, x*slotSize, y*slotSize, slotSprite, slotSize);
       i++;
     }
   }

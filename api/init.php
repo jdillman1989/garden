@@ -47,7 +47,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
   $type = 'building';
 
   if (is_map_edge($i, $map_w, $map_h)) {
-    $sprite = 'fence.png';
+    $sprite = 'post';
   }
   else{
     $type = 'ground';
@@ -55,7 +55,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
     $rng = mt_rand(0, 1);
     if ($rng) {
       $rng = mt_rand(0, 1);
-      $sprite = 'grass'. ($rng + 1) .'.png';
+      $sprite = 'grass'. ($rng + 1);
     }
     else{
       $sprite = false;
@@ -64,22 +64,22 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
 
   switch ($i) {
     case 2:
-      $sprite = 'house1.png';
+      $sprite = 'house1';
       $type = 'building';
       $pass = false;
       break;
     case 3:
-      $sprite = 'house2.png';
+      $sprite = 'house2';
       $type = 'building';
       $pass = false;
       break;
     case $map_w + 2:
-      $sprite = 'house3.png';
+      $sprite = 'house3';
       $type = 'building';
       $pass = false;
       break;
     case $map_w + 3:
-      $sprite = 'house4.png';
+      $sprite = 'house4';
       $type = 'building';
       $pass = false;
       break;
@@ -106,7 +106,7 @@ for ($i=0; $i < ($map_w * $map_h) + 1; $i++) {
 // tilled
 // corn, beets, grapes, etc
 // water
-// barn_1, barn_2, barn_3, barn_4, fence, etc
+// barn_1, barn_2, barn_3, barn_4, post, etc
 
 $currentjson['map'] = $game_map;
 $currentjson['pets'] = ['creet' => 5];

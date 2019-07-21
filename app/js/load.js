@@ -58,90 +58,26 @@ function drawGame(map){
 
       var thisSprite = map[currentPos].render.sprite;
 
-
-
-
-
-
-
       if(thisSprite){
 
+        if (map[currentPos].render.animate) {
 
+          var that = {};
 
+          that.x = x*tileSize;
+          that.y = y*tileSize;
+          that.tile = getCoordinatesTile(that.x, that.y);
+          that.id = k;
+          that.frame = 0;
+          that.sprite = window[thisSprite][0];
 
-
-
-
-
-        if(thisSprite == "grass1.png"){
-          drawSprite(saveCTX, x*tileSize, y*tileSize, grass1);
+          plants.push(that);
+          k++;
         }
         else{
-
-
-
-
-
-
-          if (map[currentPos].render.animate) {
-
-            var that = {};
-
-            that.x = x*tileSize;
-            that.y = y*tileSize;
-            that.tile = getCoordinatesTile(that.x, that.y);
-            that.id = k;
-            that.frame = 0;
-            that.sprite = sprites[thisSprite];
-
-            plants.push(that);
-            k++;
-          }
-          else{
-            saveCTX.drawImage(
-              sprites[thisSprite],
-              0,               // sprite x
-              0,               // sprite y
-              tileSize,        // sprite width
-              tileSize,        // sprite height
-              x*tileSize,      // canvas x
-              y*tileSize,      // canvas y
-              tileSize,        // canvas draw width
-              tileSize         // canvas draw height
-            );
-          }
-
-
-
-
+          drawSprite(saveCTX, x*tileSize, y*tileSize, window[thisSprite][0], tileSize);
         }
-
-
-
-
-
-
       }
-
-
-
-
-    }
-  }
-}
-
-function drawSprite(thisCTX, posX, posY, thisSprite){
-  // thisCTX.clearRect(posX, posY, tileSize, tileSize);
-  var k = 0;
-  
-  for(var y = posY; y < posY + tileSize; ++y){
-    for(var x = posX; x < posX + tileSize; ++x){
-
-      if(thisSprite[0][k]){
-        thisCTX.fillStyle = thisSprite[0][k];
-        thisCTX.fillRect(x, y, 1, 1);
-      }
-      k++;
     }
   }
 }
@@ -155,13 +91,13 @@ function drawUI(name, money, inv){
   var i = 0;
   for(var y = 0; y < uiH; ++y){
     for(var x = 0; x < uiW; ++x){
-      var slot = sprites["slot.png"];
+      var thisSlot = slot[0];
       if(i == currentSlot){
-        slot = sprites["slot-sel.png"];
+        thisSlot = slot_sel[0];
       }
-      uiCTX.drawImage(slot, x*slotSize, y*slotSize, slotSize, slotSize);
+      drawSprite(uiCTX, x*slotSize, y*slotSize, thisSlot, slotSize);
       if(i < items.length){
-        uiCTX.drawImage(sprites[items[i] + "-inv.png"], x*slotSize, y*slotSize, slotSize, slotSize);
+        drawSprite(uiCTX, x*slotSize, y*slotSize, window[items[i] + "_inv"][0], slotSize);
       }
       i++;
     }
@@ -197,7 +133,7 @@ function drawAnim(pets){
       that.tile = getCoordinatesTile(that.x, that.y);
       that.id = k;
       that.frame = 0;
-      that.sprite = sprites[types[i] + ".png"];
+      that.sprite = window[types[i]];
 
       animals.push(that);
       k++;
@@ -205,6 +141,7 @@ function drawAnim(pets){
   }
 }
 
+// Deprecated
 function loadSprites(){
   $.ajax({
     type: "GET",

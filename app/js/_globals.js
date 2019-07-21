@@ -19,8 +19,7 @@ var tileSize = 0,
     mapH = 0,
     slotSize = 0,
     uiW = 0,
-    uiH = 0,
-    sprites = {};
+    uiH = 0;
 
 // Animation States
 var animals = [],

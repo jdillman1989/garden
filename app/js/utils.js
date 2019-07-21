@@ -45,3 +45,19 @@ function adjacentTiles(tile){
 
   return obj;
 }
+
+function drawSprite(thisCTX, posX, posY, thisSprite, size){
+  // thisCTX.clearRect(posX, posY, size, size);
+  var k = 0;
+  
+  for(var y = posY; y < posY + size; ++y){
+    for(var x = posX; x < posX + size; ++x){
+
+      if(thisSprite[0][k]){
+        thisCTX.fillStyle = thisSprite[0][k];
+        thisCTX.fillRect(x, y, 1, 1);
+      }
+      k++;
+    }
+  }
+}

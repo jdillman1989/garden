@@ -45,7 +45,7 @@ function till($tileset, $currentjson){
       continue;
     }
 
-    $currentjson['map'][$tile]['render']['sprite'] = 'till.png';
+    $currentjson['map'][$tile]['render']['sprite'] = 'till';
     $currentjson['map'][$tile]['state']['type'] = 'tilled';
 
     while(($i + 1) < count($tileset)) {
@@ -53,7 +53,7 @@ function till($tileset, $currentjson){
         $i++;
       }
       else{
-        $currentjson['map'][$tileset[$i + 1]]['render']['sprite'] = 'dig.png';
+        $currentjson['map'][$tileset[$i + 1]]['render']['sprite'] = 'dig';
         break;
       }
     }
@@ -116,7 +116,7 @@ function plant($tileset, $currentjson, $item_name, $item_amt){
     else{
       $currentjson['map'][$tile]['render']['base'] = '#A57D28';
     }
-    $currentjson['map'][$tile]['render']['sprite'] = $item_name.'-0.png';
+    $currentjson['map'][$tile]['render']['sprite'] = $item_name.'_0';
     $currentjson['map'][$tile]['state']['type'] = $item_name.'_0';
     $currentjson['character']['inv'][$item_name] = $item_amt;
 
