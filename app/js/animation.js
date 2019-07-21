@@ -48,10 +48,10 @@ function animateMove(animal, dest){
 function updateAnim(){
   animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
   for(var i = 0; i < animals.length; ++i){
-    drawSprite(animCTX, animals[i].x, animals[i].y, animals[i].sprite[animals[i].frame], tileSize);
+    // drawSprite(animCTX, animals[i].x, animals[i].y, animals[i].sprite[animals[i].frame], tileSize);
   }
   for(var i = 0; i < plants.length; ++i){
-    drawSprite(animCTX, plants[i].x, plants[i].y, plants[i].sprite[plants[i].frame], tileSize);
+    // drawSprite(animCTX, plants[i].x, plants[i].y, plants[i].sprite[plants[i].frame], tileSize);
   }
 }
 

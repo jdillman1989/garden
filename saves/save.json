@@ -1,13 +1,13 @@
 {
     "globals": {
-        "init": false,
+        "init": true,
         "mapW": 25,
         "mapH": 25,
         "tileSize": 16,
         "slotSize": 32,
         "uiW": 12,
         "uiH": 2,
-        "cache": 1563574121,
+        "cache": 1563677304,
         "processing": false
     },
     "map": [
@@ -20,7 +20,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -33,7 +33,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -46,7 +46,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "house1.png",
+                "sprite": "house1",
                 "animate": false
             }
         },
@@ -59,7 +59,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "house2.png",
+                "sprite": "house2",
                 "animate": false
             }
         },
@@ -72,7 +72,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -85,7 +85,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -98,7 +98,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -111,7 +111,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -124,7 +124,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -137,7 +137,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -150,7 +150,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -163,7 +163,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -176,7 +176,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -189,7 +189,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -202,7 +202,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -215,7 +215,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -228,7 +228,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -241,7 +241,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -254,7 +254,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -267,7 +267,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -280,7 +280,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -293,7 +293,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -306,7 +306,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -319,7 +319,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -332,7 +332,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -345,7 +345,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -358,7 +358,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -371,7 +371,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "house3.png",
+                "sprite": "house3",
                 "animate": false
             }
         },
@@ -384,7 +384,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "house4.png",
+                "sprite": "house4",
                 "animate": false
             }
         },
@@ -397,7 +397,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -423,47 +423,47 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
         {
             "id": 32,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": false,
+                "animate": false
             }
         },
         {
             "id": 33,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": false,
+                "animate": false
             }
         },
         {
             "id": 34,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": false,
+                "animate": false
             }
         },
         {
@@ -475,7 +475,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -488,7 +488,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -514,7 +514,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -527,7 +527,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -540,7 +540,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -566,7 +566,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -579,7 +579,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -592,7 +592,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -605,7 +605,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -631,7 +631,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -644,7 +644,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -657,7 +657,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -670,7 +670,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -696,7 +696,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -709,7 +709,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -722,7 +722,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -735,7 +735,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -748,47 +748,47 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
         {
             "id": 57,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": "grass2",
+                "animate": false
             }
         },
         {
             "id": 58,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": "grass1",
+                "animate": false
             }
         },
         {
             "id": 59,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": false,
+                "animate": false
             }
         },
         {
@@ -807,39 +807,39 @@
         {
             "id": 61,
             "state": {
-                "type": "corn_311.069",
-                "watered": 0,
-                "ferts": 0
-            },
-            "render": {
-                "base": "#A57D28",
-                "sprite": "corn-0.png",
-                "animate": true
-            }
-        },
-        {
-            "id": 62,
-            "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": false,
+                "animate": false
+            }
+        },
+        {
+            "id": 62,
+            "state": {
+                "type": "ground",
+                "watered": 0,
+                "ferts": 0
+            },
+            "render": {
+                "base": "#4BA42F",
+                "sprite": "grass1",
                 "animate": false
             }
         },
         {
             "id": 63,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -852,7 +852,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -865,7 +865,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -878,7 +878,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -891,7 +891,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -904,7 +904,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -917,7 +917,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -930,7 +930,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -943,7 +943,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -956,7 +956,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -969,7 +969,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -982,7 +982,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -995,7 +995,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1008,7 +1008,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1021,7 +1021,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1034,7 +1034,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1047,7 +1047,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1080,40 +1080,40 @@
         {
             "id": 82,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": "grass2",
+                "animate": false
             }
         },
         {
             "id": 83,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": "grass1",
+                "animate": false
             }
         },
         {
             "id": 84,
             "state": {
-                "type": "corn_1337.693",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
-                "base": "#A57D28",
-                "sprite": "corn-1.png",
-                "animate": true
+                "base": "#4BA42F",
+                "sprite": false,
+                "animate": false
             }
         },
         {
@@ -1132,39 +1132,39 @@
         {
             "id": 86,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
         {
             "id": 87,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
         {
             "id": 88,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1177,7 +1177,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1190,7 +1190,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1203,7 +1203,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1216,7 +1216,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1229,7 +1229,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1255,7 +1255,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1268,7 +1268,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1281,7 +1281,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1294,7 +1294,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1307,7 +1307,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1320,7 +1320,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1333,7 +1333,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1346,7 +1346,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1359,7 +1359,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1372,7 +1372,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1385,7 +1385,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1398,7 +1398,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1424,7 +1424,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1437,7 +1437,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1450,46 +1450,46 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
         {
             "id": 111,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
         {
             "id": 112,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
         {
             "id": 113,
             "state": {
-                "type": "tilled",
+                "type": "ground",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "till.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1502,7 +1502,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1554,7 +1554,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1580,7 +1580,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1593,7 +1593,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1606,7 +1606,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1632,7 +1632,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1645,7 +1645,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1658,7 +1658,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1671,7 +1671,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1684,7 +1684,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1697,7 +1697,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1710,7 +1710,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1723,7 +1723,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -1736,7 +1736,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1749,46 +1749,46 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
         {
             "id": 134,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 135,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 136,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "till",
                 "animate": false
             }
         },
@@ -1801,7 +1801,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1827,7 +1827,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1840,7 +1840,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1853,7 +1853,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1866,7 +1866,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1879,7 +1879,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1905,7 +1905,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1918,7 +1918,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -1931,7 +1931,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1944,7 +1944,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -1957,7 +1957,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1970,7 +1970,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -1983,7 +1983,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2009,7 +2009,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2035,7 +2035,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2048,7 +2048,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2061,7 +2061,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2074,46 +2074,46 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
         {
             "id": 159,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 160,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 161,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "till",
                 "animate": false
             }
         },
@@ -2126,7 +2126,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2139,7 +2139,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2152,7 +2152,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2178,7 +2178,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2191,7 +2191,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2204,7 +2204,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2217,7 +2217,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2230,7 +2230,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2243,7 +2243,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2256,7 +2256,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2269,7 +2269,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2282,7 +2282,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -2295,7 +2295,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -2321,7 +2321,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2334,7 +2334,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2347,7 +2347,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2360,7 +2360,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2373,7 +2373,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2399,46 +2399,46 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
         {
             "id": 184,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 185,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 186,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "till",
                 "animate": false
             }
         },
@@ -2451,7 +2451,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2464,7 +2464,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2490,7 +2490,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2503,7 +2503,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2516,7 +2516,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2529,7 +2529,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2542,7 +2542,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2555,7 +2555,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2568,7 +2568,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2581,7 +2581,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2607,7 +2607,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -2620,7 +2620,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -2633,7 +2633,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2646,7 +2646,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2659,7 +2659,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2672,7 +2672,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2685,7 +2685,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2698,7 +2698,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2711,7 +2711,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2724,7 +2724,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2750,7 +2750,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2763,7 +2763,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2789,7 +2789,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2815,7 +2815,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2828,7 +2828,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2841,7 +2841,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2854,7 +2854,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2867,7 +2867,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2880,7 +2880,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2893,7 +2893,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -2906,7 +2906,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2932,7 +2932,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -2945,7 +2945,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -2958,7 +2958,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -2971,7 +2971,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2984,7 +2984,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -2997,7 +2997,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3010,7 +3010,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3036,7 +3036,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3049,7 +3049,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3062,7 +3062,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3075,7 +3075,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3088,7 +3088,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3101,7 +3101,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3114,7 +3114,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3140,7 +3140,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3153,7 +3153,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3166,7 +3166,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3179,7 +3179,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3192,7 +3192,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3205,7 +3205,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3218,7 +3218,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3231,7 +3231,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3257,7 +3257,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -3270,7 +3270,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -3283,7 +3283,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3296,7 +3296,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3309,7 +3309,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3322,7 +3322,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3335,7 +3335,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3348,7 +3348,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3374,7 +3374,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3387,7 +3387,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3400,7 +3400,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3413,7 +3413,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3426,7 +3426,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3439,7 +3439,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3452,7 +3452,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3478,7 +3478,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3504,7 +3504,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3517,7 +3517,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3543,7 +3543,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3556,7 +3556,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3569,7 +3569,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3582,7 +3582,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -3595,7 +3595,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -3621,7 +3621,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3647,7 +3647,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3660,7 +3660,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3673,7 +3673,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3686,7 +3686,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3699,7 +3699,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3712,7 +3712,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3725,7 +3725,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3738,7 +3738,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3751,7 +3751,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3764,7 +3764,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3803,7 +3803,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3816,7 +3816,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3829,7 +3829,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3842,7 +3842,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3855,7 +3855,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -3907,7 +3907,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -3920,7 +3920,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -3933,7 +3933,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3946,7 +3946,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3959,7 +3959,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -3972,7 +3972,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -3985,7 +3985,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4011,7 +4011,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4024,7 +4024,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4037,7 +4037,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4050,7 +4050,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4063,7 +4063,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4076,7 +4076,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4089,7 +4089,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4102,7 +4102,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4115,7 +4115,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4167,7 +4167,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4180,7 +4180,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4193,7 +4193,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4206,7 +4206,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4219,7 +4219,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4232,7 +4232,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -4245,7 +4245,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -4271,7 +4271,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4284,7 +4284,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4310,7 +4310,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4323,7 +4323,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4336,7 +4336,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4349,7 +4349,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4362,7 +4362,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4388,7 +4388,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4401,7 +4401,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4427,7 +4427,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4453,7 +4453,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4466,7 +4466,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4505,7 +4505,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4518,7 +4518,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4531,7 +4531,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4544,7 +4544,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4557,7 +4557,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -4570,7 +4570,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -4583,7 +4583,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4609,7 +4609,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4622,7 +4622,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4635,7 +4635,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4648,7 +4648,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4661,7 +4661,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4674,7 +4674,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4687,7 +4687,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4700,7 +4700,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4713,7 +4713,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4726,7 +4726,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4739,7 +4739,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4752,7 +4752,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4778,7 +4778,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4804,7 +4804,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4817,7 +4817,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4843,7 +4843,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4869,7 +4869,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4882,7 +4882,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -4895,7 +4895,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -4908,7 +4908,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4921,7 +4921,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4934,7 +4934,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -4947,7 +4947,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4960,7 +4960,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -4986,7 +4986,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -4999,7 +4999,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5025,7 +5025,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5038,7 +5038,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5064,7 +5064,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5077,7 +5077,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5090,7 +5090,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5103,7 +5103,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5116,7 +5116,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5155,7 +5155,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5168,7 +5168,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5181,7 +5181,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5207,7 +5207,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -5220,7 +5220,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -5233,7 +5233,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5246,7 +5246,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5259,7 +5259,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5272,7 +5272,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5285,7 +5285,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5298,7 +5298,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5324,7 +5324,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5350,7 +5350,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5363,7 +5363,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5376,7 +5376,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5389,7 +5389,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5428,7 +5428,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5441,7 +5441,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5454,7 +5454,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5467,7 +5467,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5480,7 +5480,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5493,7 +5493,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5506,7 +5506,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5519,7 +5519,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5532,7 +5532,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -5545,7 +5545,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -5558,7 +5558,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5571,7 +5571,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5597,7 +5597,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5610,7 +5610,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5623,7 +5623,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5649,7 +5649,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5662,7 +5662,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5688,7 +5688,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5701,7 +5701,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5714,7 +5714,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5740,7 +5740,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5766,7 +5766,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5805,7 +5805,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5818,7 +5818,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5857,7 +5857,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -5870,7 +5870,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -5896,7 +5896,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -5909,7 +5909,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -5922,7 +5922,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5935,7 +5935,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5974,7 +5974,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -5987,7 +5987,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6000,7 +6000,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6026,7 +6026,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6039,7 +6039,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6052,7 +6052,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6065,7 +6065,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6091,7 +6091,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6104,7 +6104,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6117,7 +6117,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6169,7 +6169,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6182,7 +6182,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -6195,7 +6195,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -6208,7 +6208,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6221,7 +6221,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6234,7 +6234,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6247,7 +6247,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6273,7 +6273,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6286,7 +6286,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6299,7 +6299,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6312,7 +6312,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6325,7 +6325,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6338,7 +6338,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6351,7 +6351,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6390,7 +6390,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6416,7 +6416,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6442,7 +6442,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6468,7 +6468,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6481,7 +6481,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6507,7 +6507,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -6520,7 +6520,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -6533,7 +6533,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6546,7 +6546,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6559,7 +6559,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6585,7 +6585,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6624,7 +6624,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6637,7 +6637,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6650,7 +6650,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6689,7 +6689,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6702,7 +6702,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6715,7 +6715,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6728,7 +6728,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6754,7 +6754,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6767,7 +6767,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6780,7 +6780,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6819,7 +6819,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6832,7 +6832,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -6845,7 +6845,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -6858,7 +6858,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6884,7 +6884,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6897,7 +6897,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -6923,7 +6923,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -6949,7 +6949,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -6975,7 +6975,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7001,7 +7001,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7014,7 +7014,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7027,7 +7027,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7040,7 +7040,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7066,7 +7066,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7079,7 +7079,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7092,7 +7092,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7105,7 +7105,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7118,7 +7118,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7131,7 +7131,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7157,7 +7157,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7170,7 +7170,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7183,7 +7183,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7196,7 +7196,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7209,7 +7209,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7248,7 +7248,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7261,7 +7261,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7274,7 +7274,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7300,7 +7300,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7326,7 +7326,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7339,7 +7339,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7352,7 +7352,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7365,7 +7365,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7378,7 +7378,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7391,7 +7391,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7404,7 +7404,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7417,7 +7417,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7443,7 +7443,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7456,7 +7456,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7469,7 +7469,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7482,7 +7482,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7495,7 +7495,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7521,7 +7521,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7534,7 +7534,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7547,7 +7547,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7560,7 +7560,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7573,7 +7573,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7586,7 +7586,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7599,7 +7599,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7612,7 +7612,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7625,7 +7625,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7638,7 +7638,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7651,7 +7651,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7664,7 +7664,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass1.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7677,7 +7677,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7703,7 +7703,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": false,
                 "animate": false
             }
         },
@@ -7716,7 +7716,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7742,7 +7742,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2.png",
+                "sprite": "grass1",
                 "animate": false
             }
         },
@@ -7768,7 +7768,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "grass2",
                 "animate": false
             }
         },
@@ -7807,7 +7807,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7820,7 +7820,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7833,7 +7833,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7846,7 +7846,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7859,7 +7859,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7872,7 +7872,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7885,7 +7885,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7898,7 +7898,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7911,7 +7911,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7924,7 +7924,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7937,7 +7937,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7950,7 +7950,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7963,7 +7963,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7976,7 +7976,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -7989,7 +7989,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8002,7 +8002,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8015,7 +8015,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8028,7 +8028,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8041,7 +8041,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8054,7 +8054,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8067,7 +8067,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8080,7 +8080,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8093,7 +8093,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8106,7 +8106,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8119,7 +8119,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8132,7 +8132,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         },
@@ -8145,7 +8145,7 @@
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "fence.png",
+                "sprite": "post",
                 "animate": false
             }
         }
@@ -8156,7 +8156,8 @@
         "inv": {
             "hoe": 1,
             "sickle": 1,
-            "watering": 1
+            "watering": 1,
+            "corn": 10
         }
     },
     "pets": {

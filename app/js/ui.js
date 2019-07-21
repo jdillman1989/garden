@@ -52,15 +52,14 @@ function highlightTiles(tiles) {
   }
 }
 
-function changeSlot(slot){
-  currentSlot = slot;
+function changeSlot(currentSlot){
   // uiCTX.clearRect(0, 0, uiCanvas.width, uiCanvas.height);
 
   var i = 0;
   for(var y = 0; y < uiH; ++y){
     for(var x = 0; x < uiW; ++x){
       var slotSprite = slot[0];
-      if(i == slot){
+      if(i == currentSlot){
         slotSprite = slot_sel[0];
       }
       drawSprite(uiCTX, x*slotSize, y*slotSize, slotSprite, slotSize);
