@@ -7,7 +7,7 @@
         "slotSize": 32,
         "uiW": 12,
         "uiH": 2,
-        "cache": 1563677304,
+        "cache": 1563750222,
         "processing": false
     },
     "map": [
@@ -1756,39 +1756,39 @@
         {
             "id": 134,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
         {
             "id": 135,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
         {
             "id": 136,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
@@ -2081,39 +2081,39 @@
         {
             "id": 159,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
         {
             "id": 160,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
         {
             "id": 161,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
@@ -2406,39 +2406,39 @@
         {
             "id": 184,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
         {
             "id": 185,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
         {
             "id": 186,
             "state": {
-                "type": "tilled",
-                "watered": 0,
+                "type": "corn_6.079",
+                "watered": 29.921000000000024,
                 "ferts": 0
             },
             "render": {
-                "base": "#4BA42F",
-                "sprite": "till",
+                "base": "#4C310B",
+                "sprite": "corn_0",
                 "animate": false
             }
         },
@@ -7177,26 +7177,26 @@
         {
             "id": 551,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": "grass2",
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 552,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "till",
                 "animate": false
             }
         },
@@ -7502,26 +7502,26 @@
         {
             "id": 576,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "till",
                 "animate": false
             }
         },
         {
             "id": 577,
             "state": {
-                "type": "ground",
+                "type": "tilled",
                 "watered": 0,
                 "ferts": 0
             },
             "render": {
                 "base": "#4BA42F",
-                "sprite": false,
+                "sprite": "till",
                 "animate": false
             }
         },
@@ -8157,7 +8157,7 @@
             "hoe": 1,
             "sickle": 1,
             "watering": 1,
-            "corn": 10
+            "corn": 1
         }
     },
     "pets": {
