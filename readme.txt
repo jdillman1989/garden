@@ -3,11 +3,9 @@
 ## shortterm
 
 
-Fix redraw issue
-
 Game timer (grow crops, dry tiles)
 
-Tile interactions (harvest crops)
+Tile interactions (harvest crops, resod tilled tile)
 
 Market button and screen
 
@@ -30,11 +28,6 @@ Create crops:
 - Cannabis
 
 
-Fix preloading:
-https://stackoverflow.com/questions/17480115/a-function-to-preload-images-need-to-draw-them-now-but-how
-http://rembound.com/articles/how-to-load-and-draw-images-with-html5-canvas
-
-Loading screen
 
 Animal abilities:
 - Seed drop rates (Harvesting from animals)

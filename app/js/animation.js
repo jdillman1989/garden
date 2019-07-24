@@ -51,7 +51,6 @@ function updateAnim(){
     drawSprite(animCTX, animals[i].x, animals[i].y, animals[i].sprite[animals[i].frame], tileSize);
   }
   for(var i = 0; i < plants.length; ++i){
-    console.log("plant draw");
     drawSprite(animCTX, plants[i].x, plants[i].y, plants[i].sprite[plants[i].frame], tileSize);
   }
 }

@@ -61,3 +61,10 @@ function drawSprite(thisCTX, posX, posY, thisSprite, size){
     }
   }
 }
+
+function logOnce(thisVar){
+  if(!hasLogged){
+    hasLogged = true;
+    console.log(thisVar);
+  }
+}

@@ -33,3 +33,4 @@ var animals = [],
 //     displayText();
 //   }
 // });
+var hasLogged = false;

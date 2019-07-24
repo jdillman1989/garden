@@ -48,7 +48,7 @@ function loadGame(){
 
 function drawGame(map){
   saveCTX.clearRect(0, 0, saveCanvas.width, saveCanvas.height);
-  animCTX.clearRect(0, 0, animCanvas.width, animCanvas.height);
+  plants = [];
   var k = 0;
   for(var y = 0; y < mapH; ++y){
     for(var x = 0; x < mapW; ++x){
@@ -69,7 +69,7 @@ function drawGame(map){
           that.tile = getCoordinatesTile(that.x, that.y);
           that.id = k;
           that.frame = 0;
-          that.sprite = window[thisSprite][0];
+          that.sprite = window[thisSprite];
 
           plants.push(that);
           k++;
